@@ -1,0 +1,653 @@
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+\usepackage[a4paper,margin=2cm,headheight=12pt,includehead,includefoot]{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{lastpage}
+\usepackage{enumitem}
+\usepackage{paracol}
+\usepackage{parskip}
+\usepackage{hyperref}
+\usepackage{xfrac}
+
+\newcommand{\motionsnamn}{Totalreform av styrdokument}
+\newcommand{\motionar}{Konstitutionsutskottet}
+
+\newlist{beslut}{itemize}{1}
+\setlist[beslut]{label=\textbf{att}}
+\newlist{dels}{itemize}{1}
+\setlist[dels]{label=\emph{dels},noitemsep}
+
+\newenvironment{lydelse}
+    {\begin{paracol}{2}%
+        \emph{Nuvarande lydelse}%
+        \switchcolumn%
+        \emph{Föreslagen lydelse}%
+    \end{paracol}%
+    \begin{enumerate}[label=\thesubsection.\arabic*]%
+    \begin{paracol}{2}%
+    }{\end{paracol}\end{enumerate}}
+\newcommand{\itemb}{\item[\textbullet]}
+
+
+\pagestyle{fancy}
+\fancyhead[L]{Motion om \motionsnamn}
+\fancyhead[R]{\emph{\motionar}}
+\cfoot{\thepage\ (\pageref*{LastPage})}
+
+\begin{document}
+\begin{center}
+\textsc{\huge\itshape Betänkande}\\[0.5cm]
+\textsc{\Huge Motion om}\\[0.5cm]
+\textsc{\huge \motionsnamn}\\[0.5cm]
+\textsc{\large \motionar\\}
+Ruben Seyer (föred.), Felix Augustsson
+\end{center}
+
+\section*{Bakgrund}
+Sektionens styrdokument är i grunden en sammansättning av varierande förlagor från kåren och andra sektioner som genom åren lappats och lagats med diverse mindre ändringar, tills de i nuläget innehåller flertalet redundanser, otydligheter och föråldrade bestämmelser.
+
+Vårt mål är att genom en total genomgång av gällande dokument ge styrdokumenten enhetligt språk, reda ut oklarheter, kodifiera praxis och effektivisera sektionens arbete.
+
+\section*{Sammanfattning}
+TODO
+
+\section*{Yrkanden}
+\begin{beslut}
+	\item sektionsmötet antar förslag till reviderad stadga.
+	\item sektionsmötet antar förslag till reviderat reglemente, som träder i kraft samtidigt som reviderad stadga.
+	\item sektionsstyrelsen åläggs göra övriga ändringar i styrdokument tills det att reviderad stadga träder i kraft.
+	\item sektionsmötet beslutar om följande övergångsbestämmelser:
+	\begin{itemize}
+	    \item alla särskilda ledamöter utnämns till särskilda medlemmar då reviderad stadga träder i kraft.
+	\end{itemize}
+\end{beslut}
+
+\tableofcontents
+\clearpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\part{Stadga}
+\section{Inledande bestämmelser}
+Härigenom föreskrivs i fråga om stadgans kapitel 1 att kapitlets rubrik ska lyda ''Inledande bestämmelser''.
+
+
+\subsection{Ändamål}
+Syftet är att förnya språket och ta bort redundans.
+
+Härigenom föreskrivs i fråga om stadgans avsnitt 1.1 att \S 1.1.1 ska ha följande lydelse.
+
+\begin{lydelse}
+    \item Fysikteknologsektionen, benämns nedan som sektionen, vid Chalmers studentkår är en ideell förening bestående av studerande vid utbildningsprogrammen Teknisk fysik eller Teknisk matematik vid Chalmers tekniska högskola och av studenter vid därtill associerade mastersprogram som betalat sektionsavgift till densamma.
+\switchcolumn
+    \item Fysikteknologsektionen \emph{vid Chalmers studentkår, nedan benämnt sektionen}, är en ideell förening \emph{för studenter} vid utbildningsprogrammen Teknisk fysik, Teknisk matematik \emph{och därtill associerade mastersprogram} vid Chalmers tekniska högskola.
+\end{lydelse}
+
+\subsection{Verksamhet}
+Syftet är att tillfoga styrelsens säte, vilket är allmän föreningsformalia som saknas.
+
+Härigenom föreskrivs i fråga om stadgans avsnitt 1.2
+\begin{dels}
+    \item att avsnittets rubrik ska lyda ''Verksamhet'',
+    \item att \S 1.2.2 ska införas av följande lydelse.
+\end{dels}
+
+\begin{lydelse}
+    ---
+    \switchcolumn
+    \setcounter{enumi}{1}
+    \item \emph{Sektionsstyrelsen ska ha sitt säte i Göteborg.}
+\end{lydelse}
+
+\subsection{Skyddshelgon}
+Syftet är att flytta bestämmelserna om skyddshelgon, som inte kan anses motivera ett eget kapitel.
+
+Härigenom föreskrivs i fråga om stadgans kapitel 17
+\begin{dels}
+    \item att kapitlet ska omformas och flyttas till avsnitt 1.3,
+    \item att det nya avsnittet i sin helhet ska ha följande lydelse.
+\end{dels}
+
+\begin{lydelse}
+    \setcounter{section}{17}
+    \setcounter{subsection}{1}
+    \item Sektionens skyddshelgon är Dragos.
+    
+    \item Sektionens medlemmar vördar Dragos.
+    
+    \setcounter{section}{1}
+    \setcounter{subsection}{3}
+    \switchcolumn
+    
+    \item Sektionens skyddshelgon är Dragos.
+    \item Sektionens medlemmar vördar Dragos.
+\end{lydelse}
+
+\section{Medlemskap}
+Härigenom föreskrivs i fråga om stadgans kapitel 2 att kapitlets rubrik ska lyda ''Medlemskap''.
+
+\subsection{Allmänt}
+Syftet är att konsolidera allmänna bestämmelser.
+Efterkommande ändringar i kapitlet påverkar detta avsnitt.
+
+Härigenom föreskrivs i fråga om stadgans avsnitt 2.1 och 2.4
+\begin{dels}
+    \item att rubriken för avsnitt 2.1 ska lyda ''Allmänt'',
+    \item att avsnitt 2.4 ska utgå,
+    \item att avsnitt 2.1 i sin helhet ska ha följande lydelse.
+\end{dels}
+
+\begin{lydelse}
+    \item Medlem i sektionen är kårmedlem som studerar vid utbildningsprogrammen för Teknisk fysik eller Teknisk matematik vid Chalmers tekniska högskola, som betalt sektionsavgift. Dessutom är kårmedlemmar som studerar vid programmen associerade mastersprogram, som betalt sektionsavgift, medlemmar. Därutöver kan sektionen ha hedersmedlemmar, seniormedlemmar, phatri\-arker/\-mathri\-arker, och särskild ledamot.
+    
+\switchcolumn
+    \setcounter{enumi}{0}
+    \item \emph{Sektionen har ordinarie medlemmar}, hedersmedlemmar, seniormedlemmar, \emph{emeriti} och särskilda \emph{medlemmar}.
+    
+\switchcolumn*
+\switchcolumn
+    \item \emph{Medlem som ska erlägga sektionsavgift, eller summa motsvarande denna, gör detta terminsvis.}
+
+\switchcolumn*
+    (\S 2.2.1, \S 2.5.4, \S 2.6.2, \S 2.7.2, \S 2.8.2)
+\switchcolumn
+    \item Medlem \emph{äger} närvaro-, och yttranderätt på sektionsmöte.\label{2.1:närvaro}
+    
+\switchcolumn*
+    (\S 2.2.5, \S 2.8.2)
+\switchcolumn
+    \item Medlem \emph{äger} rätt att ta del av mötesprotokoll och sektionens övriga handlingar, undantaget de dokument som listas som icke offentliga i reglementet.\label{2.1:offentlighet}
+    
+\switchcolumn*
+    (\S 2.3.1, \S 2.5.5, \S 2.6.3, \S 2.7.3, \S 2.8.3)
+
+\switchcolumn
+    \item Medlem är skyldig att rätta sig efter sektionens stadgar, regle\-mente, beslut samt övriga styrdokument.\label{2.1:skyldig}
+    
+\switchcolumn*
+    \setcounter{subsection}{4}
+    \setcounter{enumi}{0}
+    \item Sektionens förtroendeposter avser poster listade i reglementet som förtroendeposter.
+    
+    \item Sektionsaktiv är person vald till post av sektionsmötet eller sektionsstyrelsen.
+    
+\switchcolumn
+    \emph{(ersätts av \S \ref{4.1:fortroende}, \S \ref{4.1:aktiv})}
+
+\switchcolumn*
+    \setcounter{subsection}{1}
+    \setcounter{enumi}{1}
+    \item Person sittandes på en post inom sektionen och vars medlemskap avslutas behöver sektionsstyrelsens godkännande för att preliminärt sitta kvar. Beslutet fastställs på det kommande sektionsmötet.
+
+\switchcolumn
+    \item Person \emph{vald till} post inom sektionen och vars medlemskap avslutas behöver sektionsstyrelsens godkännande för att sitta kvar.
+    Beslutet fastställs på \emph{nästa} sektionsmöte.
+\end{lydelse}
+
+\subsection{Ordinarie medlemmar}
+Syftet är att ta bort tvetydigheten i begreppet medlem genom att införa begreppet \emph{ordinarie medlem}, så att begrepp medlem kan reserveras för den generella bemärkelsen.
+Dessutom görs strukturen enhetlig med övriga typer av medlem.
+Konceptet motionsrätt anses redundant och helt täckt av förslagsrätten.
+
+Härigenom föreskrivs i fråga om stadgans avsnitt 2.2 och 2.3
+\begin{dels}
+    \item att rubriken för avsnitt 2.2 ska lyda ''Ordinarie medlemmar'',
+    \item att avsnitt 2.3 ska utgå,
+    \item att avsnitt 2.2 i sin helhet ska ha följande lydelse.
+\end{dels}
+
+\begin{lydelse}
+    (se \S 2.1.1)
+
+    \switchcolumn
+    \item \emph{Ordinarie} medlem i sektionen är kårmedlem som studerar vid utbildningsprogrammen för Teknisk fysik, Teknisk matematik \emph{eller därtill associerat mastersprogram} vid Chalmers tekniska högskola \emph{och har} betalt sektionsavgift.
+
+    \subsubsection*{Rättigheter}
+    \switchcolumn*
+    \setcounter{subsection}{2}
+    \item Varje medlem har närvaro-, yttrande-, förslags- och rösträtt på sektionsmöte.
+   
+    \item Varje medlem har motionsrätt till sektionsmöte
+    
+    \switchcolumn
+    \item \emph{Ordinarie} medlem \emph{äger dessutom} förslags- och rösträtt på sektionsmöte.
+    
+    \switchcolumn*
+
+    \item Medlem är valbar till post inom sektionen.
+
+    \item Medlem har rätt till medlemskap i sektionens intresseföreningar.
+
+    \item Medlem har rätt att ta del av mötesprotokoll och sektionens övriga handlingar, undantaget de dokument som listas som icke offentliga i reglementet.
+    
+    \item Medlem har rätt att utnyttja av sektionen erbjudna tjänster.
+    
+    \switchcolumn
+    
+    \item \emph{Ordinarie} medlem är valbar till post inom sektionen.
+    
+    \item \emph{Ordinarie} medlem \emph{äger} rätt till medlemskap i sektionens intresseföreningar.
+    
+    \emph{(ersätts av \S \ref{2.1:offentlighet})}
+    
+    \item \emph{Ordinarie} medlem \emph{äger} rätt att \emph{nyttja} av sektionen erbjudna tjänster.
+    
+    %\subsubsection*{Skyldigheter}
+    
+    \switchcolumn*
+    \setcounter{subsection}{3}
+    \setcounter{enumi}{0}
+    \item Medlem är skyldig att rätta sig efter sektionens stadgar, regle\-mente, övriga beslut samt Fysikteknologsektionens övriga styrdokument.
+    
+    \switchcolumn
+    \emph{(ersätts av \S \ref{2.1:skyldig})}
+\end{lydelse}
+
+\setcounter{subsection}{2}
+\subsection{Hedersmedlemmar}
+Syftet är att numrera alla punkter och uppdatera bestämmelser som försummats vid tidigare revisioner.
+Dessutom görs bestämmelser om arrangemangsrätt enhetliga.
+
+Härigenom föreskrivs i fråga om stadgans avsnitt 2.5
+\begin{dels}
+    \item att avsnittet omnumreras till 2.3,
+    \item att avsnittet i sin helhet ska ha följande lydelse.
+\end{dels}
+
+\begin{lydelse}%
+    \subsubsection*{Grundkrav}
+    \itemb Till hedersmedlem kan kallas nu levande person som främjat F- eller TM-tekno\-loger, sektionen, ämnesområdet fysik eller matematik eller på annat sätt till\-för\-skansat sig F- eller TM-tekno\-logens vördnad och respekt.
+    \item[]
+    
+\switchcolumn
+    \setcounter{subsection}{3}
+    \item Sektionens hedersmedlemmar \emph{förtecknas} i reglementet.
+    
+    \item Till hedersmedlem kan kallas nu levande person som främjat F- eller TM-tekno\-loger, sektionen, ämnesområdet fysik eller matematik\emph{;} eller på annat sätt till\-för\-skansat sig F- eller TM-tekno\-logens vördnad och respekt.
+    
+\switchcolumn*
+    \subsubsection*{Förslag och kallande}%
+    \itemb Förslag till hedersmedlem lämnas skriftligt till sektionsstyrelsen med minst 25 namnunderskrifter från sektionsmedlemmar.
+
+    \itemb Ärendet ska tas upp på nästa sektionsmöte. Beslut om kallande skall bifallas med minst 2/3 majoritet.
+    
+    \itemb Vid bifall kallas personen till nästa sektionsmöte där val förrättas.
+
+    \itemb Personen skall närvara vid valet, eller ha inkommit med skriftligt bifall.
+
+    \itemb Beslut om inval skall bifallas med minst 2/3 majoritet.
+    
+\switchcolumn
+    \subsubsection*{Förslag och kallande}%
+    
+    \item Förslag till hedersmedlem lämnas \emph{skriftligen} till sektionsstyrelsen \emph{och talmanspresidiet} med minst 25 namnunderskrifter från medlemmar.
+
+    \item Ärendet ska tas upp på nästa sektionsmöte\emph{, dock tidigast 6 läsdagar efter att förslaget inkommit}.
+        Beslut om kallande skall \emph{fattas} med minst \sfrac{2}{3} majoritet.
+    
+    \item Vid bifall kallas personen till nästa sektionsmöte\emph{, adjungerad med närvaro- och yttranderätt, där} val förrättas.
+
+    \item Personen skall närvara vid valet, eller ha inkommit med skriftligt bifall.
+
+    \item Beslut om inval skall \emph{fattas} med minst \sfrac{2}{3} majoritet.
+    
+\switchcolumn*
+    \subsubsection*{Förteckning}%
+    \itemb Sektionens hedersmedlemmar är listade i reglementet.
+    
+\switchcolumn
+\switchcolumn*
+    \subsubsection*{Hedersmedlemmars rättigheter}%
+    \itemb Hedersmedlem har närvaro- och yttranderätt på sektionsmöte.
+    
+    \itemb Hedersmedlem har närvaro- och intaganderätt på alla sektionens
+arrangemang.
+    
+\switchcolumn
+    \subsubsection*{Rättigheter}%
+    \emph{(ersätts av \S \ref{2.1:närvaro})}
+    
+    \item Hedersmedlem \emph{äger} närvaro- och intaganderätt på alla sektionens
+arrangemang \emph{öppna för samtliga medlemmar}.
+
+%TODO \clearpage
+\switchcolumn*
+    \subsubsection*{Hedersmedlemmars skyldigheter}%
+    \itemb Hedersmedlem är skyldig att rätta sig efter sektionens stadgar,
+  regle\-mente, övriga beslut samt  Fysikteknologsektionens övriga styrdokument.
+    
+\switchcolumn
+    \emph{(ersätts av \S \ref{2.1:skyldig})}
+\end{lydelse}
+
+\subsection{Seniormedlemmar}
+Syftet är att numrera alla punkter och uppdatera bestämmelser som försummats vid tidigare revisioner.
+
+Härigenom föreskrivs i fråga om stadgans avsnitt 2.6
+\begin{dels}
+    \item att avsnittet omnumreras till 2.4,
+    \item att avsnittet i sin helhet ska ha följande lydelse.
+\end{dels}
+
+\begin{lydelse}%
+    \subsubsection*{Definition}
+    \itemb F- eller TM-teknolog har rätt att efter avslutade eller definitivt
+  avbrutna studier skriftligen ansöka om seniormedlemskap av sektionsstyrelsen
+  som därefter fastställer seniormedlemskap. Seniormedlem kvarstår som
+  senior\-med\-lem så länge en summa motsvarande sektionsavgiften skänks till sektionen.
+
+\switchcolumn
+    \setcounter{enumi}{0}
+    \item \emph{Seniormedlem är person utnämnd efter ansökan som har skänkt en summa motsvarande sektionsavgiften till sektionen.}
+    
+    \subsubsection*{Ansökan}
+  
+    \item F- eller TM-teknolog \emph{äger} rätt att efter avslutade eller definitivt
+  avbrutna studier ansöka om seniormedlemskap.
+  \emph{Ansökan lämnas skriftligen till sektionsstyrelsen.}
+  
+    \item \emph{Sektionsstyrelsen utnämner seniormedlemmar.}
+    
+\switchcolumn*
+    \subsubsection*{Seniormedlemmars rättigheter}%
+    \itemb Seniormedlem har närvaro- och yttranderätt på sektionsmöte.
+
+  \itemb Seniormedlem har närvaro- och intaganderätt på alla
+   sektionens arrangemang som är öppna för samtliga sektionens
+   medlemmar.
+
+  \itemb Seniormedlem har rätt att utnyttja av sektionen erbjudna
+   tjänster.
+   
+  \itemb Seniormedlem är valbar till post inom sektionen.
+    
+\switchcolumn
+    \subsubsection*{Rättigheter}%
+    \emph{(ersätts av \S \ref{2.1:närvaro})}
+    
+    \item Seniormedlem är valbar till post inom sektionen.
+    
+    \item Seniormedlem \emph{äger} rätt att utnyttja av sektionen erbjudna
+   tjänster.
+   
+   \item Seniormedlem \emph{äger} närvaro- och intaganderätt på alla sektionens
+arrangemang öppna för samtliga medlemmar.
+
+\switchcolumn*
+    \subsubsection*{Seniormedlemmars skyldigheter}%
+    \itemb Seniormedlem är skyldig att rätta sig efter sektionens stadgar,
+  regle\-mente, övriga beslut samt  Fysikteknologsektionens övriga styrdokument.
+    
+\switchcolumn
+    \emph{(ersätts av \S \ref{2.1:skyldig})}
+\end{lydelse}
+
+\subsection{Emeriti}
+Syftet är att numrera alla punkter och uppdatera bestämmelser som försummats vid tidigare revisioner.
+Vidare ersätts begreppet phatriark/mathriark av ett nytt könsneutralt begrepp i linje med sektionens policy.
+Omdefinitionen av medlemskap innebär automatisk rätt att kvarstå på post.
+
+Härigenom föreskrivs i fråga om stadgans avsnitt 2.7
+\begin{dels}
+    \item att avsnittets rubrik ska lyda ''Emeriti''
+    \item att avsnittet omnumreras till 2.5,
+    \item att avsnittet i sin helhet ska ha följande lydelse.
+\end{dels}
+
+\begin{lydelse}%
+    \subsubsection*{Definition}
+    \itemb Med Phatriark/Mathriark avses den som som avlagt masters-
+  eller civil\-ingenjörs\-examen som medlem av Fysik\-teknolog\-sektionen vid\\
+  Ch\-al\-mers tekniska högskola.
+
+\switchcolumn
+    \setcounter{enumi}{0}
+    \item \emph{Emeriti är} den som som avlagt masters-
+  eller civil\-ingenjörs\-examen som \emph{ordinarie} medlem av sektionen.
+    
+\switchcolumn*
+    \subsubsection*{Phatriarkers/Mathriarkers rättigheter}%
+    \itemb Phatriark/Mathriark har närvaro- och yttranderätt på sektionsmöten.
+
+    \itemb Phatriark/Mathriark må kvarstå på post inom sektionen.
+    
+\switchcolumn
+    \emph{(ersätts av \S \ref{2.1:närvaro})}
+
+\switchcolumn*
+    \subsubsection*{Phatriarkers/Mathriarkers skyldigheter}%
+    \itemb Phatriark/Mathriark är skyldig att rätta sig efter sektionens stadgar,
+  regle\-mente, övriga beslut samt  Fysikteknologsektionens övriga styrdokument.
+    
+\switchcolumn
+    \emph{(ersätts av \S \ref{2.1:skyldig})}
+\end{lydelse}
+
+\subsection{Särskild medlem}
+Syftet är att numrera alla punkter och uppdatera bestämmelser som försummats vid tidigare revisioner.
+Begreppet ledamot ersätts av medlem, eftersom det redan är i bruk i andra mer vanligt förekommande definitioner.
+\emph{Tillhörande övergångsbestämmelse finns.}
+
+Härigenom föreskrivs i fråga om stadgans avsnitt 2.8
+\begin{dels}
+    \item att avsnittets rubrik ska lyda ''Särskild medlem'',
+    \item att avsnittet omnumreras till 2.6,
+    \item att avsnittet i sin helhet ska ha följande lydelse.
+\end{dels}
+
+\begin{lydelse}%
+    \subsubsection*{Definition}
+    \itemb Särskild ledamot är kårmedlem vid Chalmers tekniska högskola
+  som sektionsmöte med minst 2/3 majoritet beslutar, och som skänkt en summa motsvarande sektionsavgiften till sektionen.
+  
+  \itemb Kårmedlem vid Chalmers Tekniska Högskola har rätt att söka till särskild ledamot. Kårmedlem som önskar söka särskild ledamot skall meddela detta till sektionsstyrelsen och talmanspresidiet senast 6 läsdagar i förväg.
+
+\switchcolumn
+    \setcounter{enumi}{0}
+    \item \emph{Särskild medlem} är kårmedlem vid Chalmers tekniska högskola, \emph{utnämnd av sektionsmötet, som har }skänkt en summa motsvarande sektionsavgiften till sektionen.
+    
+    \subsubsection*{Ansökan}
+    \item Kårmedlem vid Chalmers tekniska högskola har rätt att söka till särskild \emph{medlem}.
+        \emph{Ansökan lämnas skriftligen} till sektionsstyrelsen och talmanspresidiet.
+    
+    \item \emph{Ärendet ska tas upp på nästa sektionsmöte, dock tidigast 6 läsdagar efter att förslaget inkommit.
+        Beslut om utnämnande skall fattas med minst \sfrac{2}{3} majoritet.}
+    
+\switchcolumn*
+    \subsubsection*{Särskilda ledamöters rättigheter}%
+    \itemb Särskild ledamot har närvaro- och yttranderätt på
+   sektionsmöte.
+
+  \itemb Särskild ledamot är valbar till post inom sektionen.
+
+   \itemb Särskild ledamot har rätt att ta del av mötesprotokoll och
+   sektionens övriga handlingar, undantaget de dokument som listas som icke offentliga i reglementet.
+
+  \itemb Särskild ledamot har rätt att utnyttja av sektionen erbjudna
+   tjänster.
+    
+\switchcolumn
+    \subsubsection*{Rättigheter}%
+    \emph{(ersätts av \S \ref{2.1:närvaro})}
+
+  \item Särskild \emph{medlem} är valbar till post inom sektionen.
+  
+  \emph{(ersätts av \S \ref{2.1:offentlighet})}
+
+  \item Särskild \emph{medlem äger} rätt att utnyttja av sektionen erbjudna
+   tjänster.
+
+\switchcolumn*
+    \subsubsection*{Särskilda ledamöters skyldigheter}%
+    \itemb Särskild ledamot är skyldig att rätta sig efter sektionens stadgar,
+  regle\-mente, övriga beslut samt  Fysikteknologsektionens övriga styrdokument.
+    
+\switchcolumn
+    \emph{(ersätts av \S \ref{2.1:skyldig})}
+\end{lydelse}
+
+\section{Inspektor}
+Syftet är att numrera alla punkter och använda enhetligt språk.
+
+Härigenom föreskrivs i fråga om stadgans avsnitt 3 att avsnittet i sin helhet ska ha följande lydelse.
+
+\begin{lydelse}
+    \itemb Sektionens inspektor skall vara fysik- eller matematikprofessor vid institutionen för fysik eller institutionen för matematiska vetenskaper, och tillvarata F- och TM-teknologens intressen, samt fungera som en länk mellan teknologer och anställda.
+	
+	\itemb Sektionens inspektor väljs på två på varandra följande sektionsmöten med minst 2/3 majoritet, för mandat på tre år. 
+	
+	\itemb Förslag till inspektor inlämnas till sektionsstyrelsen med minst 25 namnunderskrifter från sektionsmedlemmar eller lyfts av sektionsstyrelsen med enkel majoritet. Innan val skall sektionsstyrelsen tillfråga den nominerade om denne är att betrakta som valbar.
+	
+	\itemb Inspektors mandat kan förlängas med tre år åt gången av sektionsmötet, om detta sker med enkel majoritet. Om mandatet ej förlängs skall nyval av inspektor ske på nästkommande sektionsmöte. Inspektors mandat förlängs då tills dess att ny inspektor blivit vald.
+
+    \itemb Inspektor har närvaro-, yttrande- och förslagsrätt vid sammanträde i sektionens samtliga organ.
+    
+    \switchcolumn
+    \setcounter{enumi}{0}
+    
+    \item Sektionens inspektor \emph{ska} vara fysik- eller matematikprofessor vid institutionen för fysik eller institutionen för matematiska vetenskaper och tillvarata F- och TM-teknologens intressen, samt fungera som en länk mellan teknologer och anställda.
+	
+	\item Sektionens inspektor väljs på två på varandra följande sektionsmöten med minst \sfrac{2}{3} majoritet, för mandat på tre år. 
+	
+	\item \emph{Nominering} till inspektor inlämnas till sektionsstyrelsen med minst 25 namnunderskrifter från medlemmar, eller lyfts av sektionsstyrelsen med enkel majoritet. Innan val skall sektionsstyrelsen \emph{inhämta} den nominerades \emph{samtycke till kandidatur}.
+	
+	\item Inspektors mandat kan förlängas med tre år åt gången av sektionsmötet.
+	Om mandatet ej förlängs \emph{ska} nyval av inspektor ske på \emph{nästa} sektionsmöte.
+	\emph{Nuvarande inspektor kvarstår provisoriskt} tills dess att ny inspektor blivit vald.
+
+    \item Inspektor \emph{äger} närvaro-, yttrande- och förslagsrätt vid sammanträde i sektionens samtliga organ.
+    
+    \item \emph{Inspektor äger rätt att ta del av mötesprotokoll och sektionens övriga handlingar, undantaget de dokument som listas som icke offentliga i reglementet.}
+\end{lydelse}
+
+\section{Organisation och ansvar}
+\subsection{Verksamhetsutövning}
+Syftet är att förnya språket och samla organisatoriska detaljer som varit utspridda eller redundanta.
+Frågan om ansvar och delegation görs mindre stel, medan hierarkin från misstroendevotum lyfts upp.
+
+Härigenom föreskrivs i fråga om stadgans avsnitt 4.1 och 4.2
+\begin{dels}
+    \item att rubriken för avsnitt 4.1 ska lyda ''Verksamhetsutövning'',
+    \item att avsnitt 4.2 ska utgå,
+    \item att avsnitt 4.1 i sin helhet ska ha följande lydelse.
+\end{dels}
+
+\begin{lydelse}
+    \item Sektionens verksamhet ut\-övas på det sätt denna stadga med
+   till\-hör\-ande regle\-mente föreskriver genom:
+      \begin{enumerate}[label=\arabic*]
+       \item Sektionsmötet
+       \item Studerandearbetsmiljöombud
+       \item Sektionens valberedning
+       \item Sektionens revisorer
+       \item Talmanspresidiet
+       \item Sektionsstyrelsen
+	   \item Sektionsordföranden
+       \item Studienämnden
+       \item Sektionskommitéer
+       \item Sektionsföreningar
+       \item Sektionsfunktionärer
+       \item Intresseföreningar
+      \end{enumerate}
+    
+    
+    
+    \switchcolumn
+    \setcounter{enumi}{0}
+    
+    \item Sektionens verksamhet ut\-övas på det sätt denna stadga med
+   till\-hör\-ande regle\-mente föreskriver genom \emph{följande organ}:
+      \begin{itemize}
+       \item Sektionsmötet
+       \item Talmanspresidiet
+       \item Valberedningen
+       \item Revisorer
+       \item Sektionsstyrelsen
+	   \item Sektionsordföranden
+       \item Studienämnden
+       \item Kommittéer
+       \item Sektionsföreningar
+       \item Funktionärer
+       \item Intresseföreningar
+      \end{itemize}
+    
+    \switchcolumn*
+    \setcounter{enumi}{1}
+    
+	\item Uppgifter och ansvar får delegeras enligt följande hierarki:
+		\begin{enumerate}
+			\item[-] Sektionsmötet har rätt att delegera både ansvar och uppgifter till valberedning, revisor, talmanspresidie, sektionsstyrelse, nämnder, sektionskommittéer, sektionsföreningar och sektionsfunktionärer.
+			\item[-] Sektionsstyrelsen har rätt att delegera uppgifter till nämnder,  sektionskommittéer, sektionsföreningar och sektionsfunktionärer, förutsatt att uppgiften ligger under deras verksamhetsområde.
+		\end{enumerate}
+	
+	\switchcolumn
+	\emph{(ersätts av \S\S \ref{4.1:högststart}--\ref{4.1:högstend})}
+	%\item Uppgifter och ansvar får delegeras enligt följande hierarki:
+	%	\begin{itemize}
+	%		\item Sektionsmötet \emph{äger} rätt att delegera både ansvar och uppgifter till \emph{alla organ, undantaget intresseföreningar}.
+	%		\item Sektionsstyrelsen \emph{äger} rätt att delegera uppgifter till studienämnden,  kommittéer, sektionsföreningar och funktionärer, förutsatt att uppgiften ligger under deras verksamhetsområde.
+	%	\end{itemize}
+	
+	\switchcolumn*
+	\setcounter{subsection}{2}
+	\setcounter{enumi}{0}
+	\item Sektionsmötet är sektionens högsta beslutande organ.
+    \item Dragos är sektionens högste beskyddare och utövar fanfareriets högsta befäl.
+    \item Sektionsmötet har till sitt förfogande valberedning,revisorer, talmanspresidiet, sektionsstyrelsen och sektionsordförande.
+    \item Övrig verksamhet lyder under sektionsstyrelsen, enligt stadgans kapitel~7.
+    
+    \switchcolumn
+    \setcounter{subsection}{1}
+    
+    \item Sektionsmötet är sektionens högsta beslutande organ.\label{4.1:högststart}
+    
+    \item Dragos är sektionens högste beskyddare och utövar fanfareriets högsta befäl.
+    
+    \item Sektionsmötet har till sitt förfogande \emph{alla sektionens organ, undantaget intresseföreningar}.
+    
+    \item \emph{Sektionsstyrelsen har till sitt förfogande studienämnden, kommittéer, sektionsföreningar och funktionärer, inom deras respektive verksamhetsområden}.\label{4.1:högstend}
+	
+	\switchcolumn*
+	(se \S 2.4.1, \S 2.4.2)
+	
+	\switchcolumn
+	\setcounter{subsection}{1}
+	
+	\item Sektionsaktiv är person vald till post av sektionsmötet eller sektionsstyrelsen.\label{4.1:aktiv}
+    
+    \item Förtroendeposter \emph{förtecknas} i reglementet.\label{4.1:fortroende}
+    \emph{Förtroendevald är person vald till förtroendepost.}
+    
+    \switchcolumn*
+    (se \S 4.3.9)
+    
+    \switchcolumn
+    \item \emph {Förtroendevalda svarar inför sektionsmötet. Övriga sektionsaktiva svarar inför sektionsstyrelsen.}
+    %\item \emph{Hierarkin mellan sektionens organ i fråga om ansvarsförhållanden är som följer:
+	%\begin{enumerate}
+	%    \item Sektionsmötet är högsta instans.
+	%    \item Förtroendevalda lyder direkt under sektionsmötet.
+	%    \item Övriga sektionsaktiva lyder under sektionsstyrelsen.
+	%\end{enumerate}}
+\end{lydelse}
+
+\setcounter{subsection}{1}
+\subsection{Misstroendeförklaring}
+Syftet är att förnya språket och samla organisatoriska detaljer som varit utspridda eller redundanta.
+Förenklingar genomförs i enlighet med föregående avsnitt.
+
+Härigenom föreskrivs i fråga om stadgans avsnitt 4.3 \begin{dels}
+    \item att avsnittets rubrik ska lyda ''Misstroendeförklaring'',
+    \item att avsnittet omnumreras till 4.2,
+    \item att avsnittet i sin helhet ska ha följande lydelse.
+\end{dels}
+
+\begin{lydelse}
+   
+
+\end{lydelse}
+
+\end{document}
