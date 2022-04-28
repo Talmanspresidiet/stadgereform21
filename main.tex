@@ -9,7 +9,7 @@
 \usepackage{enumitem}
 \usepackage{paracol}
 \usepackage{parskip}
-\usepackage[hidelinks]{hyperref}
+\usepackage[hidelinks]{hyperref} %Note: Finns en länk som går till ftek.se Reglemente §12.3.1
 \usepackage{xfrac}
 
 \newcommand{\motionsnamn}{Totalreform av styrdokument}
@@ -19,6 +19,8 @@
 \setlist[beslut]{label=\textbf{att}}
 \newlist{dels}{itemize}{1}
 \setlist[dels]{label=\emph{dels},noitemsep}
+\newlist{aligganden}{itemize}{1}
+\setlist[aligganden]{label=\textbf{att}, labelsep=1.7ex, itemsep=-0.5ex, topsep=0.5ex}
 
 \newenvironment{lydelse}
     {\begin{paracol}{2}%
@@ -31,6 +33,8 @@
     }{\end{paracol}\end{enumerate}}
 \newcommand{\itemb}{\item[\textbullet]}
 
+% Unfucka hyperref
+\renewcommand{\theHsection}{\Roman{part}.\arabic{section}}
 
 \pagestyle{fancy}
 \fancyhead[L]{Motion om \motionsnamn}
@@ -44,12 +48,13 @@
 \textsc{\huge \motionsnamn}\\[0.5cm]
 \textsc{\large \motionar\\}
 Ruben Seyer (föred.),
-Felix Augustsson,
+%Felix Augustsson,
 Erik Broback,
-Alexandru Golic,
+Alexandru Golic,\\
 Linnea Hallin,
 Joseph Löfving,
 Albert Vesterlund,
+Tobias Wallström,
 David Winroth
 \end{center}
 
@@ -58,18 +63,28 @@ Sektionens styrdokument är i grunden en sammansättning av varierande förlagor
 
 Vårt mål är att genom en total genomgång av gällande dokument ge styrdokumenten enhetligt språk, reda ut oklarheter, kodifiera praxis och effektivisera sektionens arbete.
 
+Syftet är inte att i grunden bygga om sektionens funktion, utan att uppdateringen ska leda till att dokumenten bättre motsvarar den verklighet som i dag råder på sektionen.
+
 \section*{Sammanfattning}
 En sammanfattning av de väsentliga ändringarna jämfört med tidigare dokument är
 \begin{itemize}
     \item Före detta särskild ledamot erhåller rösträtt (och ska likställas med ordinarie medlem).
     \item Inspektor omfattas nu av offentlighetsprincipen.
     \item Sektionsordförande och SAMO är ej längre separata organ.
-    \item Praxis kodifieras angående frågor om mandat, bl.a. valbarhetshinder, avsägelser och entlediganden.
+    \item Praxis kodifieras angående frågor om mandat, bl.a. valbarhetshinder, avsägelser och entlediganden. Regelverket i dessa frågor har väsentligen tillämpats sedan 20/21.
     \item Bestämmelser om misstroendeförklaring förtydligas, men ska i allt materiellt tolkas lika.
     \item Avsnittet om sektionsmöten städas upp och regler om personval flyttas till reglemente.
-    \item En långtgående elimination av redundans i definitionen av organen, särskilt mellan stadga och reglemente.
-    \item En konsolidation av bestämmelser om ekonomi för sektionen och dess organ.
-    \item Förtydligande görs kring stadgeändringar och reglementesändringar för att lösa frågeställningar kring ändringsyrkanden.
+    \item En långtgående elimination av redundans i definitionen av organen,
+      särskilt mellan stadga och reglemente. En konsekvens är att
+      sektionsföreningar också ska representeras på sektionsmöte.
+    \item En konsolidation av bestämmelser om ekonomi för sektionen och dess organ, och tydliggörande av frågan verksamhetsår/räkenskapsår.
+    \item Förtydligande görs kring stadgeändringar och reglementesändringar för att lösa frågeställningar kring ändringsyrkanden. Dessutom utökat skydd för vissa beslut i kallelse, t.ex. fonduttag.
+    \item Antalet verksamhetsplaner och -berättelser som presenteras för sektionsmötet minskas kraftigt eftersom detta inte fungerat på den nivå som tänktes under många år; det är bättre att vi kontrollerar det som det finns intresse av att kontrollera. I stället fastställs alla utom de som rör styrelsen och SNF av styrelsen. De blir fortfarande tillgängliga för alla medlemmar genom styrelseprotokoll.
+    \item Möjligheten till reducerat antal poster i organ tas bort. Poster som ej tillsätts måste vakantsättas. 
+    \item Extremt många redundanta åligganden i reglemente stryks.
+    \item Styrelsens åläggs anslå väsentliga ändringar i policydokument eftersom de blir gällande för alla medlemmar.
+    \item Sektionens regelverk kring sekretess konsolideras. Styrelsens och sektionsaktiv befattning med sekretessbelagd uppgift förydligas.
+    \item Reglementeskapitlet om kommittéoverall stryks och blir policy.
 \end{itemize}    
 
 \section*{Yrkanden}
@@ -78,6 +93,7 @@ En sammanfattning av de väsentliga ändringarna jämfört med tidigare dokument
 	\item sektionsmötet antar förslag till reviderat reglemente, som träder i kraft samtidigt som reviderad stadga.
 	\item talmanspresidiet åläggs beakta revisionen i förslaget till ny sammanträdesordning i läsperiod 1.
 	\item sektionsstyrelsen åläggs uppdatera arbetsbeskrivningar tills det att reviderad stadga träder i kraft.
+	\item sektionsstyrelsen åläggs ta fram policy om kommittéoveraller.
 	%\item sektionsstyrelsen åläggs göra övriga ändringar i styrdokument tills det att reviderad stadga träder i kraft.
 	\item sektionsmötet beslutar om följande övergångsbestämmelser:
 	\begin{itemize}
@@ -86,7 +102,17 @@ En sammanfattning av de väsentliga ändringarna jämfört med tidigare dokument
 	\end{itemize}
 \end{beslut}
 
-\tableofcontents
+\vspace{10ex}
+
+Det är vår stora ära att härmed få överlämna motionen om totalreform av styrdokument.
+
+Göteborg den \today
+
+% SIGNATURER HÄR ;)
+
+
+\clearpage
+\tableofcontents %Note: Den är fucked pga två dokument (stadga & reglemente) som har samma numrering
 \clearpage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -121,6 +147,7 @@ Härigenom föreskrivs i fråga om stadgans avsnitt 1.2
     \item[] ---
   \switchcolumn
     \item Sektionens \emph{räkenskapsår} löper från 1 juli till 30 juni. \emph{Ett organ på sektionen får ha annat verksamhetsår enligt reglemente.}
+    \label{S:Verksamhetsar}
     \item \emph{Sektionsstyrelsen ska ha sitt säte i Göteborg.}
 \end{lydelse}
 
@@ -253,6 +280,7 @@ Härigenom föreskrivs i fråga om stadgans avsnitt 2.2 och 2.3
   \switchcolumn
     
     \item \emph{Ordinarie} medlem är valbar till post inom sektionen.
+    \label{S:OrdinarieMedlem}
     
     \item[] \emph{(ersätts av \S\ref{2.x:allarätt})}
     
@@ -704,7 +732,7 @@ Härigenom förskrivs i fråga om stadgan
     \item Vid \emph{vakans kan} sektionsstyrelsen preliminärt tillsätta posten.
       \emph{Beslutet fastställs} på nästkommande sektionsmöte. \label{4.x:styretval}
 
-    \item \emph{Kandidat ska närvara eller lämna skriftligt samtycke.} \label{4.x:samtycke}
+    \item \emph{Kandidat ska närvara vid inval eller lämna skriftligt samtycke till sin kandidatur.} \label{4.x:samtycke}
 
   \switchcolumn*
     \item[] (se \S 5.9.1, \S 6.2.2, \S\S 13.1.4--5, samt reglemente)
@@ -713,18 +741,20 @@ Härigenom förskrivs i fråga om stadgan
     \switchcolumn  
     \subsubsection*{Valbarhet}
     \item \emph{Ingen kan samtidigt inneha fler än en förtroendepost, eller fler än en post i samma organ.}
+    \label{S:ValbarhetMaxEnFortroende}
 
     \item \emph{Ingen kan samtidigt inneha post i fler än en av sektionsstyrelsen, talmanspresidiet, revisorer och valberedning.} \label{4.x:valbar.dubbel}
 
-    \item \emph{Talman, vice talman och ledamot i valberedningen får dessutom ej inneha post i studienämnden eller kommitté.} \label{4.x:valbar.ober}
+    \item \emph{Talman, vice talman och ledamot i valberedningen får ej inneha post i studienämnden eller kommitté.} \label{4.x:valbar.ober}
 
-    \item \emph{Revisor får dessutom ej inneha ekonomiskt ansvar inom sektionen.}
+    \item \emph{Revisor får ej inneha ekonomiskt ansvar inom sektionen.}
       
     \item \emph{Talmanspresidiet och revisorer behöver ej vara medlemmar av sektionen.}
 
     \item \emph{Revisor ska vara myndig.} \label{4.x:valbar.revisormyndig}
       
     \item \emph{Ekonomiskt ansvarig ska vara förtroendevald och myndig.}
+    \label{S:ValbarEkonomiskMyndig}
 \end{lydelse}
 
 \subsection{Entledigande}
@@ -863,7 +893,7 @@ Härigenom föreskrivs i fråga om stadgans avsnitt 5.1
 
     \item[] ---
   \switchcolumn
-  \setcounter{subsection}{0}
+  \setcounter{subsection}{1}
   \setcounter{enumi}{0}
     \item Sektionsmötet är sektionens högsta beslutande organ, i vilket samtliga medlemmar har rätt att delta.
 
@@ -940,11 +970,12 @@ Härigenom föreskrivs i fråga om stadgans avsnitt 5.4
   \end{itemize}
 
   \item Det åligger sektionsmötet att innan utgången av läsperiod 4
+  \label{S:SektmoteLP4Alagg}
   \begin{itemize}
-    \item välja sektionsordförande, vice sektionsordförande och sektionskassör,
-    \item välja talmanspresidium,
-    \item välja valberedning,
-    \item välja revisorer.
+    \item välja sektionsordförande, \emph{vice sektionsordförande} och sektionskassör,
+    \item välja talmans\emph{presidium},
+    \item \emph{välja valberedning},
+    \item \emph{välja revisorer}.
   \end{itemize}
 \end{lydelse}
 
@@ -1176,8 +1207,10 @@ Härigenom föreskrivs i fråga om stadgans kapitel 7
     Ordförandebeslut \emph{ska fastställas snarast av sektionsstyrelsen}.
 
   \item \emph{Vice sektionsordförande övertar i sektionsordförandens frånvaro} dennes befogenheter och plikter.
+  \label{S:ViceLaRevolution}
 
   \item \emph{Sektionsordförande och sektionskassör är ekonomiskt ansvariga.}
+  \label{S:SektionsstyrelseEkonomisktAnsvariga}
 \end{lydelse}
 \setcounter{section}{6}
 \setcounter{subsection}{1}
@@ -1205,7 +1238,7 @@ Härigenom föreskrivs i fråga om stadgans kapitel 7
   \switchcolumn  
 
   \item[] \emph{(utgår)}
-  \item Sektionsstyrelsen sammanträder på kallelse av sektionsordförande.
+  \item Sektionsstyrelsen sammanträder på kallelse av sektionsordförande. \label{S:Styretkallelse}
   \item Sektionsstyrelsen är \emph{beslutsför} om \emph{fler än hälften av sektionsstyrelsens ledamöter är närvarande inklusive sektionsordförande eller vice sektionsordförande}.
   \item Protokoll förs vid styrelsemöte, justeras av två styrelseledamöter och anslås senast två läsveckor efter mötet.
 \end{lydelse}
@@ -1238,6 +1271,7 @@ Härigenom föreskrivs i fråga om stadgans kapitel 8
   \item Studienämnden består av studienämndsordförande, studienämndskassör och övriga \emph{ledamöter} enligt reglemente.
 
   \item \emph{Studienämndsordförande och studienämndskassör är förtroendeposter och ekonomiskt ansvariga.}
+  \label{S:StudienamndEkonomiskt}
 \end{lydelse}
 \setcounter{section}{7}
 \setcounter{subsection}{1}
@@ -1257,8 +1291,9 @@ Härigenom föreskrivs i fråga om stadgans kapitel 8
   \setcounter{subsection}{2}
   \item \emph{Studienämnden sammanträder på kallelse av studienämndsordförande.}
   \item \emph{Ordinarie och särskilda medlemmar har} närvaro-, yttrande- och förslagsrätt på studienämndsmöte. \label{7.x:SNFrätt}
-  \item \emph{Endast studienämndens ledamöter har dessutom rösträtt på studienämndsmöte.}
+  \item \emph{Endast studienämndens ledamöter har rösträtt på studienämndsmöte.}
   \item Protokoll \emph{förs} vid studienämndsmöte, justeras av en studienämndsledamot och anslås senast två läsveckor efter mötet.
+  \label{S:StudienamndProtokoll}
 \end{lydelse}
 \setcounter{section}{7}
 \setcounter{subsection}{2}
@@ -1288,6 +1323,7 @@ Härigenom föreskrivs i fråga om stadgans kapitel 9
   \item \emph{Kommittéer verkar för att uppfylla sektionens ändamål och ska vara dess representanter.}
   \item \emph{Kommittéer fastställs och förtecknas i reglemente, med syfte, sammansättning och åligganden.}
   \item \emph{Sammansättningen ska åtminstone innehålla ordförande och kassör, vilka är förtroendeposter och ekonomiskt ansvariga.}
+  \label{S:KomitteEkonomisktAnsvar}
   \item[] \emph{(ersätts av \S\ref{4.x:tillsätt} och \S\ref{13.x:valBfp})}
 \end{lydelse}
 \setcounter{section}{8}
@@ -1443,7 +1479,9 @@ Härigenom föreskrivs i fråga om stadgans avsnitt 5.9
   \setcounter{section}{12}
   \item \emph{Talmanspresidiet leder sektionsmötet och förvaltar sektionens demokratiska grund.}
   \item Talmanspresidiet består av talman\emph{, vice talman och sekreterare.}
+  \label{S:TalPStrukt}
   \item \emph{Vice talman övertar i talmans frånvaro dennes befogenheter och plikter.}
+  \label{S:TalPViceTOrdf}
 \end{lydelse}
 \setcounter{section}{12}
 
@@ -1501,8 +1539,10 @@ ledamöter samt minst en representant för berörd styrelse, nämnd, kommitté e
   \item[] \emph{(ersätts av reglemente)}
   \item \emph{Valberedningen sammanträder för nominering på kallelse av ordförande. Upp till två representanter för organ till vilket ska nomineras får adjungeras.}
   \item Valberedningen är beslutsför \emph{om minst tre ledamöter är närvarande inklusive ordförande eller vice ordförande}, samt minst \emph{en adjungerad representant för organ till vilket ska nomineras.}
-  \item \emph{Nominering ska beslutas senast 5 läsdagar innan sektionsmötet då val äger rum.} 
+  \item \emph{Nominering ska beslutas senast 7 dagar innan sektionsmötet då val äger rum.} 
+  \label{S:ValBAnslaNomTid}
   \item Valberedningens nomineringar anslås i enlighet med reglemente \emph{samt tillsänds sektionsstyrelsen och talmanspresidiet}.
+  \label{S:ValBAnslaNom}
 \end{lydelse}
 \setcounter{section}{13}
 \setcounter{subsection}{2}
@@ -1531,6 +1571,7 @@ Härigenom föreskrivs i fråga om stadgans kapitel 13
   \item \emph{Sektionens organisationsnummer är 857208-8477.}
 
   \item \emph{Sektionens firma tecknas av sektionsordförande och sektionskassör var för sig.}
+  \label{S:EkonomiSektFirma}
 \end{lydelse}
 
 \subsection{Redovisning och ansvarsfrihet} \label{14.x:redovisning}
@@ -1542,9 +1583,10 @@ Härigenom föreskrivs i fråga om stadgans kapitel 13
   \setcounter{enumi}{0}  
   \item \emph{Sektionsstyrelsen upprättar gemensamt bokslut för sektionen, innefattande alla organ utom intresseföreningar.}
   \item \emph{Studienämnden, kommittéer och övriga organ enligt reglemente upprättar dessutom egen löpande redovising och delbokslut.}
+  \label{S:RedovisningKont}
   \item \emph{Sektionsstyrelsen handhar annars den löpande redovisningen.}
   \item \emph{Gemensam årsredovisning enligt detta avsnitt fastställs vid första ordinarie sektionsmöte efter sektionens verksamhetsårs slut.
-      Handlingarna tillställs revisorer, sektionsstyrelsen och talmanspresidiet senast 11 läsdagar innan.} \label{14.x:tillställa}
+      Handlingarna tillställs revisorer, sektionsstyrelsen och talmanspresidiet senast 11 läsdagar innan mötet.} \label{14.x:tillställa}
   \item \emph{Frågan om ansvarsfrihet för förtroendeposter behandlas vid första ordinarie sektionsmöte efter berört organs verksamhetsår av sektionsmötet på grundval av revisionsberättelsen.}
 \end{lydelse}
 % budget
@@ -1567,7 +1609,7 @@ Härigenom föreskrivs i fråga om stadgans kapitel 13
   \setcounter{enumi}{0}  
   \item \emph{Lekmannarevisorerna granskar oberoende och kontinuerligt sektionens verksamhet och ekonomi.}
 
-  \item \emph{Revisor får ej granska verksamhetsår för organ, då denna var ledamot det året eller föregående, eller annat jäv föreligger.} \label{14.x:revisorjäv}
+  \item \emph{Revisor får ej granska verksamhetsår för organ, då denna var ledamot det året eller föregående, eller då annat jäv föreligger.} \label{14.x:revisorjäv}
 
   \item \emph{Två ordinare revisorer väljs. Om revisorer enligt \S\ref{14.x:revisorjäv} inte kan granska samtliga organ väljs extra revisor för dessa.}
 
@@ -1632,7 +1674,7 @@ Härigenom föreskrivs i fråga om stadgans kapitel 14
   \item \emph{Beslut om stadgeändring fattas med \sfrac{2}{3} majoritet.
       Fastställande av beslutet görs med \sfrac{2}{3} majoritet på nästkommande sektionsmöte, dock tidigast efter fyra läsveckor förflutit.
       Lydelsen får ej ändras vid fastställandet.} \label{maj:sä}
-  \item \emph{Stadgeändring ska dessutom fastställas av Chalmers studentkårs styrelse.}
+  \item \emph{Stadgeändring ska fastställas av Chalmers studentkårs styrelse.}
   \item \emph{Beslut om reglementesändring fattas med \sfrac{2}{3} majoritet.} \label{maj:rä}
 \end{lydelse}
 \setcounter{section}{15}
@@ -1665,6 +1707,7 @@ Härigenom föreskrivs i fråga om stadgans kapitel 14
   \item Vid konflikt med reglemente eller Fysikteknologsektionens övriga styrdokument har stadgan företräde.
   \switchcolumn
   \item \emph{Vid konflikt med annat styrdokument har stadga och reglemente företräde. Vid konflikt med reglemente har stadga företräde.}
+  \label{S:TolkningStadgaFore}
   \item \emph{Vid tvist om stadgans tolkning avgörs frågan av inspektor.}
 \end{lydelse}
 \setcounter{section}{15} 
@@ -1715,6 +1758,9 @@ Härigenom föreskrivs i fråga om stadgans kapitel 15
 \setcounter{subsection}{2}
 
 \clearpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \part{Reglemente}
 
 \setcounter{section}{0}
@@ -1724,7 +1770,7 @@ Syftet är redaktionellt.
 Härigenom föreskrivs i fråga om reglementets kapitel 1
 \begin{dels}
     \item att kapitlets rubrik ska lyda ''Medlemskap'',
-    \item att avsnitt 1.1 och 1.2 ska utgå.
+    \item att nuvarande avsnitt 1.1 och 1.2 ska utgå.
 \end{dels}
 
 \begin{lydelse}
@@ -1745,11 +1791,13 @@ verksamhet:
     \setcounter{subsection}{0}
     \switchcolumn
     
-    \item[] \emph{(ersätts av \S\ref{R:städa})}
-    \item[] \emph{(ersätts av \S\ref{R:sekretess})}
+    \item[] \emph{(ersätts av \S\ref{R:Nollanstad})}\vspace{2.4em}
+    \item[] \emph{(ersätts av avsnitt \ref{R:sekretess})}
 \end{lydelse}
 
 \subsection{Hedersmedlemmar}
+Syftet är redaktionellt.
+
 Härigenom föreskrivs i fråga om reglementets avsnitt 1.3
 \begin{dels}
     \item att avsnittet ska omnumreras 1.1,
@@ -1775,76 +1823,3152 @@ Härigenom föreskrivs i fråga om reglementets avsnitt 1.3
     Schrödingers katt är därmed kanske hedersmedlem.}
 \end{itemize}
 \end{lydelse}
-
 \section{Sektionsmötet}
+Syftet är redaktionellt samt att förteckna praxis som använts de senaste åren.
+
+Härigenom föreskrivs i fråga om reglementets kapitel 2
+
+\begin{dels}
+    \item att kapitlets rubrik ska lyda ''Sektionsmötet''
+\end{dels}
+
 \subsection{Åligganden}
+Syftet är redaktionellt.
+Åligganden angående verksamhetsplaner som inte finns i stadga kodifieras.
+Flera åligganden angående val har flyttat till stadgan.
+
+Härigenom föreskrivs i fråga om reglementets avsnitt 2.4
+
+\begin{dels}
+    \item att avsnittets rubrik ska lyda ''Åligganden'',
+    \item att avsnittet ska omnumreras 2.1,
+    \item att avsnittet i sin helhet ska ha följande lydelse.
+\end{dels}
+
+\begin{lydelse}
+    \item[] \emph{(se \S 2.3.1, \S 2.5.2)}
+    \setcounter{subsection}{4}
+    
+    \item[]
+    \item[]
+    \vspace{12em}
+    \item Det åligger sektionsmötet att innan utgången av läsperiod 1 utöver de i stadgarna definierade åliggandena välja:
+    \begin{itemize}
+			\item Årskursrepresentant till studienämnden
+			\item Balnågonting
+			\item Kräldjursvårdare  %flyttad enl sektmötesbeslut lp1 21/22
+			\item Sektionsnörd      %se ovan
+		\item Frisörer.         %se ovan
+	\end{itemize}
+    
+    \item Det åligger sektionsmötet att innan utgången av läsperiod 2 utöver de i stadgarna definierade åliggandena välja:
+	\begin{itemize}
+		\item Förtroendeposter i FARM
+		\item Ledamöter i FARM
+		\item Förtroendeposter i FnollK
+		\item Ledamöter i FnollK
+		\item FIF.
+    \end{itemize}
+
+	\item Det åligger sektionsmötet att innan utgången av läsperiod 3 utöver de i stadgarna definierade åliggandena välja:
+	\begin{itemize}
+		\item Bilnissar
+		\item Blodgrupp
+		\item Fanfareri
+		\item Finform
+		\item Spidera
+		\item Sångförmän
+		\item Bakisclubben (BC)
+		\item Game Boy
+		\item Piff och Puff
+		\item Foton
+		\item Fabiola
+		\item Mastermottagningsansvarig.
+	\end{itemize}
+
+	\item Det åligger sektionsmötet att innan utgången av  läsperiod 4 utöver de i stadgarna definierade åliggandena välja:
+	\begin{itemize}
+		\item Dragos
+		\item Sektionsstyrelse
+		\item Valberedning
+		\item Studienämnden, förutom årskursrepresentant
+		\item Förtroendeposter i Djungelpatrullen
+		\item Adjutanter i Djungelpatrullen
+		\item Förtroendeposter i F6
+		\item Ledamöter i F6
+		\item Förtroendeposter i Focumateriet
+		\item Ledamöter i Focumateriet
+		\item Revisorer
+		\item Talmanspresidiet
+		\item Fristående ledamöter i JämF.
+	\end{itemize}
+    \setcounter{subsection}{1}
+    \switchcolumn
+    
+    \item \emph{Det åligger dessutom sektionsmötet att innan utgången av läsperiod 1}
+    \begin{itemize}
+        \item \emph{anta sammanträdesordning på förslag av föregående års talman},
+        \item \emph{fastställa verksamhetsplan för studienämnden}.
+    \end{itemize}
+    
+    \item \emph{Det åligger dessutom sektionsmötet att innan utgången av läsperiod 4}
+    \begin{itemize}
+        \item \emph{fastställa preliminär verksamhetsplan för sektionsstyrelsen,}
+        \item \emph{fastställa preliminär budget för sektionen.}
+    \end{itemize}
+    
+    \vspace{0.6em}
+    \item Det åligger \emph{dessutom} sektionsmötet att innan utgången av läsperiod 1 välja
+    \begin{itemize}
+        \item Balnågonting
+        \item Frisörer
+        \item Kräldjursvårdare
+        \item Sektionsnörd
+        \item årskursrepresentant \emph{i} studienämnden
+    \end{itemize}
+    
+    \vspace{1.2em}
+    \item Det åligger \emph{dessutom} sektionsmötet att innan utgången av läsperiod 2 välja
+    \begin{itemize}
+        \item FARM
+        \item FIF
+        \item FnollK
+    \end{itemize}
+
+    \vspace{4.8em}
+    \item Det åligger \emph{dessutom} sektionsmötet att innan utgången av läsperiod 3 välja
+    \begin{itemize}
+        \item Bakisclubben
+        \item Bilnissar
+        \item Blodgrupp
+        \item Fabiola
+        \item Fanfareri
+        \item Finform
+        \item Foton
+        \item Game Boy
+        \item Mastermottagningsansvarig
+        \item Piff och Puff
+        \item Spidera
+        \item Sångförmän
+    \end{itemize}
+
+    \item[]
+    \item Det åligger \emph{dessutom} sektionsmötet att innan utgången av läsperiod 4 välja
+    \begin{itemize}
+        \item Djungelpatrullen
+        \item Dragos
+        \item F6
+        \item Focumateriet
+        \item Studienämnden, \emph{exkl}. årskursrepresentant
+        \item fristående ledamöter i JämF
+        \item \emph{resterande ledamöter i Sektionsstyrelsen}
+        \item []\emph{(valberedning, revisorer samt talmanspresidium flyttat till stadga \S \ref{S:SektmoteLP4Alagg})}
+    \end{itemize}
+\end{lydelse}
+
 \subsection{Utlysning}
+Syftet är redaktionellt.
+
+Härigenom föreskrivs i fråga om reglementets avsnitt 2.1 och 2.2
+
+\begin{dels}
+    \item att avsnitten sammanfogas till ett nytt avsnitt,
+    \item att avsnittets rubrik ska lyda ''Utlysning'',
+    \item att avsnittet ska omnumreras 2.2,
+    \item att avsnittet i sin helhet ska ha följande lydelse.
+\end{dels}
+
+\begin{lydelse}
+    \setcounter{subsection}{1}
+    \setcounter{enumi}{1}
+    \item Kallelse till sektionsmöte skall tillsändas sektionsmedlemmar, revisorer, inspektor och kårledningen.
+    \setcounter{enumi}{0}
+    \item Kallelse till sektionsmöte  skall innehålla uppgifter om datum, tid och plats, samt preliminär föredragningslista. Denna skall anslås via sektionens officiella kommunikationskanaler.
+    
+    \item[] (se \S 2.5.8)
+    
+    \setcounter{subsection}{0}
+    
+    \switchcolumn
+    \item Kallelse \emph{samt slutgiltig föredragningslista ska utöver anslag} tillsändas sektionsmedlemmar, revisorer, inspektor och kårledningen.
+    \label{R:SektionsMAnslag}
+    
+    \item[] \emph{(ersätts av \S \ref{R:SektionsMAnslag}, avsnitt \ref{R:Tillkannagivande})}
+
+    \vspace{9ex}
+    \item Datum för ordinarie sektionsmöten fastställs av talmanspresidiet på ett styrelsemöte i samråd med styrelsen.
+\end{lydelse}
+
+\setcounter{subsection}{2}
 \subsection{Personval}
+Syftet är konsolidera bestämmelserna som berör personval under ett avsnitt.
+
+Härigenom föreskrivs i fråga om reglementets kapitel 2
+
+\begin{dels}
+    \item att ett nytt avsnitt införs,
+    \item att avsnittets rubrik ska lyda ''Personval'',
+    \item att avsnittet ska numreras 2.3,
+    \item att avsnittet i sin helhet ska ha följande lydelse.
+\end{dels}
+
+\begin{lydelse}
+    \setcounter{subsection}{1}
+
+    \item[] (se stadga \S 5.12.1)
+    
+    \vspace{1.2em}
+    \item[] (se stadga \S 5.12.2)
+    
+    \vspace{3.4em}
+    \item[] (se \S3.3.3, \S3.3.4)
+    
+    \setcounter{subsection}{0}
+    
+    \switchcolumn
+    \item \emph{Vid personval där det finns fler kandidater än poster ska sluten votering användas.}
+    
+    \item \emph{Vid personval där två eller fler kandidater får lika röstetal som hade lett till val ska ny votering göras med dessa kandidater.
+    Skulle på nytt lika röstetal uppkomma skiljer lotten.}
+    
+    \item \emph{Vid personval där godkänd gruppnominering enligt \ref{R:valb:grupp} avgetts ska nominerade anses valda enligt denna om sektionsmötet enligt valberedningens nominering väljer motsvarande förtroendeposter.
+    I annat fall sker personval till dessa poster enligt vanlig ordning.}
+    \label{R:SektmoteGruppnom}
+\end{lydelse}
+
 
 \section{Sektionsstyrelsen}
+
+Härigenom föreskrivs i fråga om reglementets kapitel 4
+
+\begin{dels}
+    \item att kapitlets rubrik ska lyda ''Sektionsstyrelsen''
+    \item att kapitlet ska omnumreras 3
+\end{dels}
+
 \subsection{Sammansättning}
+Syftet är redaktionellt samt att eliminera redundans.
+Villkoren för valbarhet ryms nu i stadga.
+
+Härigenom föreskrivs i fråga om reglementets avsnitt 4.1
+
+\begin{dels}
+    \item att avsnittets rubrik ska lyda ''Sammansättning'',
+    \item att avsnittet ska omnumreras 3.1,
+    \item att avsnittet i sin helhet ska ha följande lydelse.
+\end{dels}
+
+\begin{lydelse}
+    \setcounter{section}{4}
+    
+    \item Sektionsstyrelsen består av följande förtroendeposter:
+	\begin{itemize}
+		\item Sektionsordförande
+		\item Vice sektionsordförande
+		\item Sektionskassör
+		\item Sekreterare
+		\item Skyddsombud
+		\item Informationsansvarig
+		\item Ordförande i SNF
+		\item Ordförande i FnollK
+		\item Ordförande i F6
+		\item Ordförande i FARM
+		\item Ordförande i Focumateriet
+		\item Ordförande i Djungelpatrullen
+	\end{itemize}
+
+    \vspace{1ex}
+	\item Villkor för ledamöter i sektionsstyrelsen:
+	\begin{itemize}
+		\item En kan ej inneha fler än en position i sektionsstyrelsen.
+		\item Revisor, talmanspresidiet eller ledamot av valberedningen kan ej vara medlem av sektionsstyrelsen.
+		\item Ledamot av sektionsstyrelsen kan ej inneha annan förtroendepost.
+	\end{itemize}
+
+	\item Suppleanter
+	\label{R:StyretViceSuppleant}
+	\begin{itemize}
+		\item Vice ordförande i respektive kommitté samt studienämnden är suppleant i sektionsstyrelsen.
+		\item Suppleant övertar ordförandens befogenheter vid styrelsemöten vid ordförandens bortfall, undantaget då styrelsemötet hålls bakom stängda dörrar.
+	\end{itemize}
+	
+    \setcounter{section}{3}
+    \switchcolumn
+    
+    \item Sektionsstyrelsen består av följande poster:
+    \begin{itemize}
+        \item Sektionsordförande
+    	\item Vice sektionsordförande
+    	\item Sektionskassör
+    	\item Sekreterare
+    	\item Skyddsombud
+    	\item Informationsansvarig
+    	\item Ordförande i \emph{studienämnden}
+    	\item Ordförande i FnollK
+    	\item Ordförande i F6
+    	\item Ordförande i FARM
+    	\item Ordförande i Focumateriet
+    	\item Ordförande i Djungelpatrullen
+    \end{itemize}
+    \emph{varav samtliga är förtroendeposter.}
+    
+    \vspace{0.4em}
+    \item[] \emph{(ersätts av stadga \S \ref{S:ValbarhetMaxEnFortroende}, stadga \S \ref{4.x:valbar.dubbel})}
+    
+    \item[]
+    \item[]
+    \item[]
+    \item[]
+    \item[]
+    
+    \vspace{3ex}
+    \item Vice ordförande i respektive kommitté samt studienämnden är suppleant i sektionsstyrelsen.
+    
+    \vspace{1.2em}
+    \item Suppleant övertar \emph{sin ordinaries} befogenheter vid styrelsemöten vid bortfall, undantaget då styrelsemötet hålls bakom stängda dörrar.
+\end{lydelse}
+
+
 \subsection{Styrelsemöten}
+Syftet är mestadels redaktionellt. 
+Kravet på minst 3 sammanträden per läsperiod är förlegat och tas bort.
+Det förtydligas att mötesdeltagare ej kan adjungeras in med rösträtt.
+
+Härigenom föreskrivs i fråga om reglementets avsnitt 4.2
+
+\begin{dels}
+    \item att avsnittets rubrik ska lyda ''Styrelsemöten'',
+    \item att avsnittet ska omnumreras 3.2,
+    \item att avsnittet i sin helhet ska ha följande lydelse.
+\end{dels}
+
+\begin{lydelse}
+    \setcounter{section}{4}
+    \setcounter{subsection}{2}
+    \setcounter{enumi}{0}
+    \item Sektionsstyrelsen skall sammanträda minst 3 gånger per läsperiod.
+    
+    \item Kallelse till styrelsemöte anslås av sektionsordföranden.
+
+    \item Kallelse till styrelsemöte ska senast två dagar innan mötet skickas till ordinarie ledamöter av sektionsstyrelsen, medlem av kommitté och nämnd, revisorer, talmanspresidiet, valberedningen samt övriga berörda sektionsföreningsmedlemmar och funktionärer.
+    
+    \item Protokoll från styrelsemöten anslås via någon av sektionens officiella kommunikationskanaler.
+	\setcounter{enumi}{8}	
+    \item Varje medlem har rätt att få fråga behandlad på styrelsemöte.
+    Sådan fråga skickas till styrelsen senast tre dagar innan mötet.
+    \switchcolumn
+    \setcounter{section}{3}
+    \setcounter{subsection}{2}
+    \setcounter{enumi}{0}
+    \item[] ---
+    
+	\item[] \emph{(ersätts av stadga \S\ref{S:Styretkallelse})}
+
+	\item Kallelse till styrelsemöte skall senast två dagar innan mötet tillsändas ordinarie ledamöter av sektionsstyrelsen, medlem av kommitté och nämnd, revisorer, talmanspresidiet, valberedningen samt övriga berörda sektionsföreningsmedlemmar och funktionärer.
+	
+	\item[] \emph{(ersätts av \S \ref{R:Tillkannagivande})}
+	
+	\item Varje medlem har rätt att få fråga behandlad på styrelsemöte.\emph{ Denna ska då} skickas till styrelsen senast tre dagar innan mötet.
+\end{lydelse}
+\textbf{Rättigheter}
+\begin{lydelse}
+    \setcounter{section}{4}
+    \setcounter{subsection}{2}
+    \setcounter{enumi}{4}
+    \item Ordinarie ledamöter av sektionsstyrelsen har \\ närvaro-, yttrande-, förslags- och rösträtt. 
+    \item Talmannen har närvaro-, yttrande- och förslagsrätt. Vid frågor som direkt berör sektionsmöten har talmannen även rösträtt. Vid talmannens frånvaro övertar vice talman dennes befogenheter. 
+    \item Revisor och ledamöter av valberedningen har \\ närvaro-, yttrande- och förslagsrätt.
+    \item Ledamöter av kommittéer och nämnd, samt sektionens inspektor, har närvaro- och yttranderätt.
+    \item[] ---
+    \setcounter{section}{3}
+    \switchcolumn
+    \setcounter{section}{3}
+    \setcounter{subsection}{2}
+    \setcounter{enumi}{3}
+    \item Ordinarie ledamöter av sektionsstyrelsen har \\ närvaro-, yttrande-, förslags- och rösträtt. 
+
+    \item Talman, \emph{revisor och ledamöter av valberedningen} har närvaro-, yttrande- och förslagsrätt.
+    \label{R:StyretMoteTRV}
+    
+    \vspace{2.4em}
+    \item[] \emph{(ersätts av \S \ref{R:StyretMoteTRV})}
+    
+    \vspace{1.2em}
+    \item Ledamot av kommitté och \emph{studienämnden} har närvaro- och yttranderätt. %Note: saknas sektionens inspektor?
+    		
+    \item \emph{Mötesdeltagare kan ej adjungeras in med rösträtt.}
+\end{lydelse}
+\textbf{Bakom stängda dörrar}
+\begin{lydelse}
+    \setcounter{section}{4}
+    \setcounter{enumi}{9}
+    \item Bakom stängda dörrar
+    \begin{itemize}
+		\item Sektionsstyrelsen kan, om synnerliga skäl föreligger, för visst ärende med minst 2/3 majoritet besluta att överläggning sker bakom stängda dörrar.
+		\item Enbart ordinarie ledamöter av sektionsstyrelsen äger närvarorätt vid möte bakom stängda dörrar.
+		\item Sektionsstyrelsen kan adjungera in övriga deltagare.
+		\item Endast beslutsprotokoll fört då mötet hålls bakom stängda dörrar skall anslås.
+		\item Det som diskuteras bakom stängda dörrar får ej föras vidare till tredje part. 
+	\end{itemize}
+    \setcounter{section}{3}
+    \switchcolumn
+    
+    \vspace{4ex}
+    \item Sektionsstyrelsen kan, om synnerliga skäl föreligger, för visst ärende med minst \sfrac{2}{3} majoritet besluta att överläggning sker bakom stängda dörrar.
+
+    \item Enbart ordinarie ledamöter av sektionsstyrelsen äger närvarorätt vid möte bakom stängda dörrar.
+    \emph{Övriga deltagare kan adjungeras in.}
+    \label{R:BSDAdjungering}
+    
+    \item[]
+    
+    \vspace{3ex}
+    \item Endast beslutsprotokoll förs då mötet hålls bakom stängda dörrar ska anslås. %Note: Stavning
+    
+    \item Det som diskuteras bakom stängda dörrar får ej föras vidare till tredje part. 
+\end{lydelse}
+
+
 \subsection{Åligganden}
+Syftet är eliminera redundans.
+
+Härigenom föreskrivs i fråga om reglementets avsnitt 4.3
+
+\begin{dels}
+    \item att avsnittets rubrik ska lyda ''Åligganden'',
+    \item att avsnittet ska omnumreras 3.3,
+    \item att avsnittet i sin helhet ska ha följande lydelse.
+\end{dels}
+
+\begin{lydelse}
+    \setcounter{section}{4}
+    \item Det åligger sektionsstyrelsen:
+	\begin{description}
+		\item[att] verka för sammanhållningen mellan sektionsmedlemmarna och verka för deras gemensamma intressen.
+		\item[att] leda sektionens arbete.
+		\item[att] verkställa och övervaka genomförandet av sektionsmötesbeslut.
+		\item[att] framlägga budget till sektionsmötet.
+		\item[att] planera Fysikteknologsektionens framtida inriktning och verksamhet.
+		\item[att] fatta beslut i de ärenden som framlägges till sektionsstyrelsen.
+		\item[att] varje år tillsammans med studienämnden utse sektionens representanter i styrelser och kommittéer inom högskolan. Dock krävs för ledamöterna i Programråden godkännande från sektionsmötet.
+		\item[att] delta i de av Djungelpatrullen anordnade städdagarna två gånger per läsår. Om detta uppfylls får de närvarande gå gratis på nästa sektionsaktivafest.
+		\item[att] i samråd med de som önskar söka sektionsstyrelsen ta fram en preliminär verksamhetsplan och presentera denna på sektionsmöte innan utgången av läsperiod 4.
+		\item[att] följa de av sektionen upprättade arbetsordningarna.
+	\end{description}
+
+    \item Det åligger sektionsstyrelsens ordförande:
+	\begin{description}
+		\item[att] tillse att sektionens beslut verkställs.
+		\item[att] föra sektionens talan då något annat ej stadgats eller beslutats.
+		\item[att] teckna sektionens firma.
+		\item[att] leda och övervaka arbetet inom sektionsstyrelsen.
+		\item[att] vara Fysikteknologsektionens representant i kårledningsutskottet.
+		\item[att] tillse att det finns representanter från sektionsstyrelsen i F:s och TM:s programråd.
+		\item[att] tillsammans med sektionskassören ansvara för Fysikteknologsektionens ekonomi.
+	\end{description}
+    \noindent Sektionsordförande har full insyn i Fysikteknologsektionens alla organ och äger rätt att deltaga i deras möten med yttranderätt.
+
+    \item Det åligger sektionsstyrelsens vice ordförande:
+	\begin{description}
+		\item[att] i ordförandes frånvaro överta dennes åligganden.
+		\item[att] biträda ordföranden.
+		\item[att] i samråd med styrelsen och övriga sektionsaktiva upprätta sektionens verksamhetsberättelse.
+	\end{description}
+
+    \item Det åligger sektionsstyrelsens  kassör:
+	\begin{description}
+		\item[att] sköta och ansvara för Fysikteknologsektionens ekonomi tillsammans med ordföranden.
+		\item[att] fortlöpande kontrollera kommittéernas samt eventuella sektionföreningars räkenskaper och bokföring.
+		\item[att] teckna sektionens firma.
+		\item[att] genom Chalmers Studentkår uppbära sektionsavgiften.
+		\item[att] i samråd med sektionsstyrelsen upprätta preliminärt budgetförslag till första ordinarie höstmötet.
+		\item[att] till varje sektionsmöte kunna redogöra för sektionens ekonomiska ställning.
+	\end{description}
+
+    \item Det åligger sektionsstyrelsens sekreterare:
+	\begin{description}
+		\item[att] föra protokoll vid styrelsemöten och senast två läsdagar efter möte överräcka renskrivet protokoll till ordföranden.
+		\item[att] tillse att protokoll från styrelsemöten anslås.
+		\item[att] tillse att sektionens stadgar, reglemente och förordningar är aktuella och efterlevs.
+	\end{description}
+
+    \item Det åligger sektionsstyrelsens skyddsombud:
+	\begin{description}
+		\item[att] vara sektionens studerandearbetsmiljöombud samt vara Fysikteknologsektionens jämlikhetsansvarige. SAMO har i sitt uppdrag tystnadsplikt.
+		\item[att] tillvarata sektionsmedlemmarnas intressen i skyddsfrågor, jämlikhets- och jämställdhetsfrågor och samarbeta med Chalmers Studentkårs kontaktperson samt högskolans skyddsombud.
+		\item[att] deltaga på studienämndens möten då arbetsmiljöfrågor behandlas.
+		\item[att] leda arbetet i sektionens jämlikhetsråd, JämF.
+	\end{description}
+
+    \item Det åligger sektionsstyrelsens informationsansvariga:  
+	\begin{description}
+		\item[att] sköta kontakt med sektionen samt uppdatera sektionens hemsida. 
+		\item[att] tillse att material som inkommer till sektionen anslås eller på annat sätt förmedlas  till den/dem det berör.
+		\item[att] vara sektionsstyrelsens representant i Spidera.
+	\end{description}    
+
+    \item Det åligger sektionsstyrelsens övriga ledamöter:
+	\begin{description}
+		\item[att] bistå sektionsstyrelsen med information.
+		\item[att] aktivt deltaga i beslutsprocessen.
+		\item[att] redogöra för sin kommittés/studienämnds löpande verksamhet vid styrelsemöten.
+	\end{description}
+	\setcounter{section}{3}
+    \switchcolumn
+    \setcounter{enumi}{0}
+    \item Det åligger sektionsstyrelsen
+    \begin{aligganden}
+        \item verka för sammanhållningen mellan sektionsmedlemmarna och deras gemensamma intressen.
+    	\item leda sektionens arbete.
+    	\item verkställa och övervaka genomförandet av sektionsmötesbeslut.
+    	\item framlägga budget till sektionsmötet.
+    	\item planera \emph{sektionens} framtida inriktning och verksamhet.
+    	\item fatta beslut i de ärenden som framlägges till sektionsstyrelsen.
+    	\item varje år tillsammans med studienämnden utse sektionens representanter i styrelser och kommittéer inom högskolan.
+    	    \emph{Ledamöterna i programråden fastställs av sektionsmötet.} \vspace{1.6em}
+    	\item[] \emph{(redundant med arbetsordning)}\vspace{8.7ex}
+    	\item i samråd med de som önskar söka sektionsstyrelsen ta fram en preliminär verksamhetsplan och presentera denna på sektionsmöte innan utgången av läsperiod 4.\vspace{0.9ex}
+    	\item[] \emph{(implicit från \ref{R:ForteckningStyrdokument})}
+    \end{aligganden}
+
+    \vspace{0.9em}
+    \item Det åligger sektionsstyrelsens ordförande:
+    \begin{aligganden}
+        \item tillse att sektionens beslut verkställs.
+        \item föra sektionens talan då något annat ej stadgats eller beslutats.
+        \item[] \emph{(ersätts av stadga \S \ref{S:EkonomiSektFirma})}\vspace{0.3em}
+        \item leda och övervaka arbetet inom sektionsstyrelsen.\vspace{0.2em}
+        \item vara \emph{sektionens} representant i kårledningsutskottet.
+        \item tillse att det finns representanter från sektionsstyrelsen i \emph{programråden för sektionens program}.
+        \item[] \emph{(ersätts av stadga \S \ref{S:SektionsstyrelseEkonomisktAnsvariga})}\vspace{1.2em}
+        \item[] \emph{(redundant efter ansvarsfördelning i stadgans avsnitt \ref{4.2:ansvar})}
+    \end{aligganden}
+
+    \vspace{0.5em}
+    \item Det åligger sektionsstyrelsens vice ordförande:
+    \begin{aligganden}
+        \vspace{-0.2em}
+        \item[] \emph{(ersätts av stadga \S \ref{S:ViceLaRevolution})}\vspace{1.2em}
+        \item[] \emph{(redundant)}\vspace{0.2em}
+        \item i samråd med styrelsen och övriga sektionsaktiva upprätta sektionens verksamhetsberättelse.
+    \end{aligganden}
+
+
+    \item Det åligger sektionsstyrelsens  kassör:
+    \begin{aligganden}
+        \vspace{-0.2em}
+        \item[] \emph{(ersätts av stadga \S \ref{S:SektionsstyrelseEkonomisktAnsvariga})}\vspace{1.4em}
+        \item fortlöpande kontrollera kommittéernas samt eventuella sektionföreningars räkenskaper och bokföring.\vspace{0.2em}
+        \item[] \emph{(ersätts av stadga \S \ref{S:EkonomiSektFirma})}\vspace{0.2em}
+        \item genom Chalmers studentkår uppbära sektionsavgiften.
+        \item i samråd med sektionsstyrelsen upprätta preliminärt budgetförslag till första ordinarie höstmötet.
+        \item till varje sektionsmöte kunna redogöra för sektionens ekonomiska ställning.
+    \end{aligganden}
+    
+    \vspace{-0.1em}
+    \item Det åligger sektionsstyrelsens sekreterare:\vspace{-0.4em}
+    \begin{aligganden}
+        \item föra protokoll vid styrelsemöten och senast två läsdagar efter möte överräcka renskrivet protokoll till ordföranden.\vspace{0.3em}
+        \item tillse att protokoll från styrelsemöten anslås.\vspace{0.2em}
+        \item tillse att sektionens stadgar, reglemente och förordningar är aktuella och efterlevs.
+    \end{aligganden}
+    
+    \vspace{-0.2em}
+    \item Det åligger sektionsstyrelsens skyddsombud:
+    \begin{aligganden}
+        \item \emph{vara sektionens studerandearbetsmiljöombud samt vara sektionens jämlikhetsansvarige.}
+        \item \emph{lyda under tystnadsplikt i sitt uppdrag.}\vspace{0.8em}
+        \item tillvarata sektionsmedlemmarnas intressen i skyddsfrågor, jämlikhets- och jämställdhetsfrågor och samarbeta med Chalmers studentkårs kontaktperson samt högskolans skyddsombud.\vspace{0.2em}
+        \item deltaga på studienämndens möten då arbetsmiljöfrågor behandlas.
+        \item vara sektionsstyrelsens representant \emph{i} JämF.
+    \end{aligganden}
+    
+    \item Det åligger sektionsstyrelsens informationsansvariga:  
+    \begin{aligganden}
+        \item sköta kontakt med sektionen samt uppdatera sektionens hemsida. 
+        \item tillse att material som inkommer till sektionen anslås eller på annat sätt förmedlas till \emph{berörda parter.}\vspace{0.2em}
+        \item vara sektionsstyrelsens representant i Spidera.
+    \end{aligganden}
+    
+    \item[] \emph{(ersätts av \S\ref{R:KommitteOrdfRepr})}
+\end{lydelse}
+
 
 \section{Studienämnden}
+Syftet är redaktionellt samt att eliminera redundans.
+I synnerhet tas begreppet ''nämnder'' bort eftersom studienämnden är den enda s.k. nämnden sedan länge.
+
+Härigenom föreskrivs i fråga om reglementets kapitel 5
+
+\begin{dels}
+    \item att kapitlets rubrik ska lyda ''Studienämnden'',
+    \item att avsnitt 5.1 ska uppgå i kapitlet,
+    \item att \S 5.1.1.1 -- \S 5.1.1.3, \S 5.1.3.1 ska utgå,
+    \item att kapitlet ska omnumreras 4
+\end{dels}
+
+\begin{lydelse}
+
+    \item[5.1.1.1] En person kan ej inneha två poster i studienämnden samtidigt.
+	\item[5.1.1.2] Ekonomiskt ansvarig i studienämnden skall vara myndig.
+	\item[5.1.1.3] En person kan ej inneha ordförandepost i en kommitté eller nämnd samtidigt som denne innehar vice ordförandepost i annan kommitté eller nämnd.
+	\item[5.1.3.1] Studienämnden har en verksamhet som går från 1 juli till 30 juni.
+    \switchcolumn
+    \item[] \emph{(ersätts av stadga \S\ref{4.x:valbar.dubbel})} \vspace{1.3em}
+    \item[] \emph{(ersätts av stadga \S\ref{S:ValbarEkonomiskMyndig})} \vspace{1em}
+    \item[] \emph{(ersätts av stadga \S\ref{4.x:valbar.dubbel})}\vspace{2.5em}
+    \item[] \emph{(ersätts av \S\ref{R:VanligtVerksamhetsar})}
+    
+\end{lydelse}
+
 \subsection{Sammansättning}
+Syftet är redaktionellt.
+
+Härigenom föreskrivs i fråga om reglementets avsnitt 5.1.2
+
+\begin{dels}
+    \item att avsnittets rubrik ska lyda ''Sammansättning'',
+    \item att avsnittet ska omnumreras 4.1,
+    \item att avsnittet i sin helhet ska ha följande lydelse.
+\end{dels}
+
+\begin{lydelse}
+
+	\item[5.1.2.1] Studienämnden består av följande poster:
+	\begin{itemize}
+		\item Ordförande
+		\item Vice ordförande
+		\item Kassör
+		\item Sekreterare
+		\item Kandidatansvarig
+		\item Masteransvarig
+		\item Årskursrepresentant åk. 1
+		\item Veckobladerist
+		\item Matansvarig. 
+	\end{itemize}
+    Där ordförande, vice ordförande och kassör anses vara förtroendevalda.
+
+    \switchcolumn
+    \item Studienämnden består av följande poster:
+    \begin{itemize}
+        \item Ordförande
+    	\item Vice ordförande
+    	\item Kassör
+    	\item Sekreterare
+    	\item Kandidatansvarig
+    	\item Masteransvarig
+    	\item Årskursrepresentant åk. 1
+    	\item Veckobladerist
+    	\item Matansvarig %Note: ta bort punkt här
+    	\end{itemize}
+   \emph{varav ordförande, vice ordförande och kassör är förtroendeposter.}
+
+\end{lydelse}
+
 \subsection{Åligganden}
+Syftet är mestadels redaktionellt.
+Kravet på minst 3 sammanträden per läsperiod slopas eftersom det är en kopia från styrelsemötena.
+
+
+Härigenom föreskrivs i fråga om reglementets avsnitt 5.1.4
+
+\begin{dels}
+    \item att avsnittets rubrik ska lyda ''Åligganden'',
+    \item att avsnittet ska omnumreras 4.2,
+    \item att avsnittet i sin helhet ska ha följande lydelse.
+\end{dels}
+
+\begin{lydelse}
+
+    \item[5.1.4.1] Det åligger studienämnden:
+	\begin{description}
+		\item[att]  sammanträda minst tre gånger per läsperiod.
+		\item[att] ansvara för utvecklandet av utbildningsbevakningen på Fysikteknologsektionen.
+		\item[att] inför Fysikteknologsektionen svara för att F- och TM-teknologernas intressen i studiefrågor och studiemiljö bevakas på ett tillfredsställande sätt.
+		\item[att] tillse att det finns representant från studienämnden i programråden för F och TM.\vspace{1em}
+		\item[att] på verksamhetsårets första sektionsmöte presentera en verksamhetsplan för det kommande läsåret.   
+		\item[att] följa åligganden enligt arbetsbeskrivning.
+	\end{description}
+
+    \item[5.1.4.2] Det åligger studienämndens ordförande:
+	\begin{description}
+		\item[att] tillse att studienämndens ålägganden utförs.
+		\item[att] leda studienämndens verksamhet.
+		\item[att] kalla studienämnden till sammanträde.
+		\item[att] tillsammans med kassören ansvara för studienämndens ekonomi.
+		\item[att] representera studienämnden i sektionsstyrelsen.
+		\item[att] i studie- och studiemiljöfrågor representera Fysikteknologsektionen och föra dess talan.
+		\item[att] representera F och TM i Utbildningsutskottet, UU.
+		\item[att] inför Fysikteknologsektionen svara för att F- och TM-teknologernas intressen i studiefrågor och studiemiljö bevakas på ett tillfredsställande sätt.
+	\end{description}
+
+    \item[5.1.4.3] Det åligger studienämndens vice ordförande:
+	\begin{description}
+		\item[att] assistera ordföranden i dennes åligganden.
+		\item[att] ersätta ordföranden när denne inte är närvarande.
+		\item[att] ansvara för studiesociala evenemang.
+		\item[att] vara studienämndens suppleant i sektionsstyrelsen och Utbildningsutskottet.
+	\end{description}
+
+    \item[5.1.4.4] Det åligger studienämndens kassör:
+	\begin{description}
+		\item[att] sköta och ansvara för studienämndens ekonomi tillsammans med ordförande.
+		\item[att] kontinuerligt föra en granskningsbar redovisning gällande studienämnden:s ekonomi.
+		\item[att] mot revisorerna och sektionskassören kontinuerligt redovisa den ekonomiska situationen. 
+	\end{description}
+
+    \item[5.1.4.5] Det åligger studienämndens sekreterare:
+	\begin{description}
+ 		\item[att] tillse att protokoll förs på studienämndens möten.
+		\item[att] anslå nämndens protokoll enligt stadgarna.
+	\end{description}
+
+    \item[5.1.4.6] Det åligger studienämndens medlemmar:
+	\begin{description}
+		\item[att] vara ordföranden behjälplig.
+	\end{description}
+	\setcounter{section}{4}
+    \switchcolumn
+    \setcounter{enumi}{0}
+    
+    \item Det åligger studienämnden:
+    \begin{aligganden}
+        \item[] --- \vspace{1.2em}
+        \item ansvara för utvecklandet av utbildningsbevakningen på \emph{sektionen}.
+        \item inför \emph{sektionen} svara för att \emph{teknologerna på sektionens programs} intressen i studiefrågor och studiemiljö bevakas på ett tillfredsställande sätt.\vspace{0.2em}
+        \item tillse att det finns representant från studienämnden i programråden för sektionens program.\vspace{0.2em}
+        \item på verksamhetsårets första sektionsmöte presentera en verksamhetsplan för det kommande läsåret.\vspace{0.2em}
+        \item[] \emph{(implicit från \ref{R:ForteckningStyrdokument})}
+    \end{aligganden}
+    
+    \vspace{-0.2em}
+    \item Det åligger studienämndens ordförande:
+    \begin{aligganden}
+        \vspace{-0.2em}
+        \item[] \emph{(redundant)}\vspace{0.2em}
+        \item leda studienämndens verksamhet.
+        \item kalla studienämnden till sammanträde. \vspace{0.5em}
+        \item[] \emph{(ersatt av stadga \S \ref{S:StudienamndEkonomiskt})}\vspace{1.4em}
+        \item representera studienämnden i sektionsstyrelsen.\vspace{0.2em}
+        \item i studie- och studiemiljöfrågor representera \emph{sektionen} och föra dess talan.\vspace{0.2em}
+        \item representera \emph{sektionen} i Utbildningsutskottet, UU.
+        \item[] \emph{(redundant)} %Note: Finns ett sådant krav för kommittéer men ej snf
+    \end{aligganden}
+    
+    \item[]
+    \item[]
+    \vspace{3em}
+    \item[] \vspace{-0.5em}
+    
+    \item Det åligger studienämndens vice ordförande:
+    \begin{aligganden}
+        
+        \item[] \emph{(redundant)}
+        \item[] \emph{(redundant)}\vspace{1.4em}
+        \item ansvara för studiesociala evenemang.
+        \item[] \emph{(redundant)}
+    \end{aligganden}
+    
+    \vspace{1.2em}
+    \item Det åligger studienämndens kassör:
+    \begin{aligganden}
+        \item[] \emph{(ersätts av stadga \S \ref{S:StudienamndEkonomiskt})}\vspace{1.2em}
+        \item[] \emph{(ersätts av stadga \S \ref{S:RedovisningKont})}\vspace{1.3em}
+        \item mot revisorerna och sektionskassören kontinuerligt redovisa den ekonomiska situationen. 
+    \end{aligganden}
+    
+    \item Det åligger studienämndens sekreterare:
+    \begin{aligganden}
+         \item tillse att protokoll förs på studienämndens möten.
+         \item[] \emph{(ersätts av stadga \S \ref{S:StudienamndProtokoll})}
+    \end{aligganden}
+    \begin{aligganden}
+        \item[] \emph{(redundant)}
+    \end{aligganden}
+\end{lydelse}
 
 \section{Kommittéer}
+Syftet är redaktionellt samt att eliminera redundans.
+Kraven på valbarhet till poster ersätts av avsnittet om valbarhet i stadgan.
+
+Härigenom föreskrivs i fråga om reglementets kapitel 6
+
+\begin{dels}
+    \item att kapitlets rubrik ska lyda ''Kommittéer''
+    \item att avsnitt 6.1 ska utgå,
+    \item att kapitlet ska omnumreras 5
+\end{dels}
+
+Förklaring av strukna punkter:
+\begin{lydelse}
+    \setcounter{section}{6}
+    \setcounter{subsection}{1}
+    \item En person kan ej inneha två ledamotsposter i samma kommitté.
+	\item Ekonomiskt ansvarig i kommitté skall vara myndig.
+	\item En person kan ej inneha ordförandepost i en kommitté eller nämnd samtidigt som denne innehar vice ordförandepost i annan kommitté eller nämnd.
+	\setcounter{section}{5}
+    \switchcolumn
+    
+    \item[] \emph{(ersätts av stadga \ref{S:ValbarhetMaxEnFortroende})}\vspace{1.2em}
+    \item[] \emph{(ersätts av stadga \ref{S:ValbarEkonomiskMyndig})}\vspace{1.2em}
+    \item[] \emph{(ersätts av stadga \ref{S:ValbarhetMaxEnFortroende})}
+    
+\end{lydelse}
+
 \subsection{Förteckning}
+Syftet är redaktionellt.
+Kommittéernas beskrivande texter blir egna punkter under respektive kommittées avsnitt.
+
+Härigenom föreskrivs i fråga om reglementets avsnitt 6.2
+
+\begin{dels}
+    \item att avsnittets rubrik ska lyda ''Förteckning'',
+    \item att avsnittet ska omnumreras 5.1,
+    \item att avsnittet i sin helhet ska ha följande lydelse.
+\end{dels}
+
+\begin{lydelse}
+    \setcounter{section}{6}
+    \setcounter{subsection}{2}
+    \item Fysikteknologsektionens sektionskommittéer är:
+	\begin{itemize}
+		\item Fysikteknologsektionens arbetsmarknadsgrupp, FARM.
+		\item Fysikteknologsektionens mottagningskommitté, FnollK.
+		\item Fysikteknologsektionens sexmästeri, F6.
+		\item Fysikteknologsektionens PR-förening och rustmästeri, Djungelpatrullen.
+		\item Fysikteknologsektionens focumateri, Focumateriet. 
+	\end{itemize}
+	\setcounter{section}{5}
+	\setcounter{subsection}{1}
+    \switchcolumn
+    
+    \item \emph{Sektionens} kommittéer är:
+    \begin{itemize}
+        \item \emph{FARM}
+    	\item \emph{FnollK}
+    	\item \emph{F6}
+    	\item \emph{Djungelpatrullen}
+    	\item \emph{Focumateriet}
+    \end{itemize}
+\end{lydelse}
+
 \subsection{Allmänna åligganden}
+Syftet är att konsolidera allmänna åliggnaden som varit utspridda.
+
+Härigenom föreskrivs i fråga om reglementets avsnitt 6.4
+
+\begin{dels}
+    \item att avsnittets rubrik ska lyda ''Allmänna åligganden'',
+    \item att avsnittet ska omnumreras 5.2,
+    \item att avsnittet i sin helhet ska ha följande lydelse.
+\end{dels}
+
+\begin{lydelse}
+    \setcounter{section}{6}
+    \setcounter{subsection}{3}
+    
+    \item Det åligger varje sektionskommitté:
+	\begin{description}
+		\item[att] på det ordinarie sektionsmöte som följer på det att kommittens verksamhetsår har börjat presentera en verksamhetsplan för det kommande verksamhetsåret.     
+		\item[att] följa åligganden enligt arbetsbeskrivning. 
+	\end{description}
+    
+    \vspace{8em}
+    \item Det åligger kassören i varje sektionskommitté:
+	\begin{description}
+		\item[att]  mot revisorerna och sektionskassören kontinuerligt redovisa för den ekonomiska situationen.
+	\end{description}
+	
+    \setcounter{section}{5}
+    \setcounter{subsection}{2}
+    \switchcolumn
+    
+    \item Det åligger varje \emph{kommitté}:
+    \begin{aligganden}
+        \vspace{-0.4em}
+        \item \emph{inom en läsperiod efter dess inval presentera en verksamhetsplan för det kommande verksamhetsåret för sektionsstyrelsen.}
+        \item[] \item[] \emph{(implicit från \ref{R:ForteckningStyrdokument})}
+    \end{aligganden}
+    
+    \vspace{-0.3em}
+    \item \emph{Det åligger ordföranden i varje kommitté:}
+    \begin{aligganden}
+        \item \emph{leda kommitténs arbete.}
+        \label{R:KommitteOrdfLeda}
+        \item \emph{fungera som en kontaktlänk mellan kommittén och andra organ samt företräda kommittén i sektionsstyrelsen.}
+        \label{R:KommitteOrdfRepr}
+    \end{aligganden}
+    
+    \item Det åligger kassören i varje \emph{kommitté}:
+    \begin{aligganden}
+        \vspace{-0.3em}
+        \item mot revisorerna och sektionskassören kontinuerligt redovisa för den ekonomiska situationen.
+    \end{aligganden}
+\end{lydelse}
 \subsection{FARM}
+Syftet är redaktionellt samt att eliminera redundans.
+Många implicita åligganden stryks.
+
+Härigenom föreskrivs i fråga om reglementets avsnitt 6.4
+
+\begin{dels}
+    \item att avsnittets rubrik ska lyda ''FARM'',
+    \item att avsnittet ska omnumreras 5.3,
+    \item att avsnittet i sin helhet ska ha följande lydelse.
+\end{dels}
+
+\begin{lydelse}
+    \setcounter{section}{6}
+    \setcounter{subsection}{4}
+    \item[] \emph{(Se \S6.2.1)}
+    
+    \item FARM består av följande poster:
+	\begin{itemize}
+		\item Ordförande
+ 		\item Vice ordförande
+		\item Kassör
+		\item 0--5 ledamöter
+	\end{itemize}
+    där ordförande, vice ordförande och kassör är förtroendeposter.
+    \item FARM har en verksamhet som går från 1 januari till 31 december.
+
+	\item Vid räkenskapsårets slut skall tillgångar över 0,659 basbelopp tillfalla sektionen. Visst utrymme för representation får förekomma.
+    \item Det åligger FARM:
+	\begin{description}
+		\item[att] arrangera studiebesök och branschkvällar.   
+		\item[att] informera företag om programmen Teknisk fysik samt Teknisk matematik, och deras fördelar.
+	\end{description}
+	
+	\item Det åligger FARM:s ordförande:
+	\begin{description}
+		\item[att] tillse att kommitteens åligganden utförs.
+		\item[att] leda FARM:s arbete.
+		\item[att] tillsammans med kassören ansvara för FARM:s ekonomi.
+		\item[att] fungera som kontaktlänk mellan FARM och övriga kommittéer samt företräda FARM i sektionsstyrelsen.
+	\end{description}
+
+    \item Det åligger FARM:s vice ordförande:
+	\begin{description}
+		\item[att] vara kommitténs suppleant i sektionsstyrelsen.
+		\item[att] hjälpa FARM-ordföranden i dennes uppgifter så att de utförs på bästa sätt.
+	\end{description}
+
+    \item Det åligger FARM:s kassör:
+	\begin{description}
+		\item[att] tillsammans med ordförande ansvara för och sköta FARM:s ekonomi.
+		\item[att] kontinuerligt föra en granskningsbar redovisning gällande FARM:s ekonomi.
+	\end{description}
+
+    \item Det åligger FARM:s övriga medlemmar:
+	\begin{description}
+		\item[att] hjälpa FARM- ordföranden i dennes uppgifter så att de utförs på bästa sätt.
+	\end{description}
+	\setcounter{section}{5}
+    \setcounter{subsection}{3}
+    \switchcolumn 
+    \item \emph{FARM är sektionens arbetsmarknadsgrupp.}
+
+    \item FARM består av följande poster:
+    \begin{itemize}
+        \item Ordförande
+     	\item Vice ordförande
+    	\item Kassör
+    	\item \emph{5 ledamöter}
+    \end{itemize}
+    \emph{varav} ordförande, vice ordförande och kassör är förtroendeposter.
+    
+    \item[] \emph{(ersätts av \S \ref{R:BrutnaVerksamhetsar})} \vspace{1.2em}
+    
+    \item[] \emph{(redundant)}\vspace{2.4em}
+    
+    \item Det åligger FARM:
+    \begin{aligganden}
+        \vspace{-0.3em}
+        \item arrangera studiebesök och branschkvällar. \vspace{0.2em}
+        \item informera företag om \emph{sektionens program} och deras fördelar.
+    \end{aligganden}
+    
+    \vspace{1.2em}
+    \item[] \emph{(ersätts av \S \ref{R:KommitteOrdfLeda}, \S \ref{R:KommitteOrdfRepr}, stadga \S \ref{S:KomitteEkonomisktAnsvar})} 
+    
+    \vspace{12.5em}
+    
+    \item[] \emph{(ersätts av \S \ref{R:StyretViceSuppleant})}
+    
+    \vspace{6em}
+    \item[] \emph{(ersätts av \S \ref{S:KomitteEkonomisktAnsvar})}\vspace{1.2em}
+    \item[] \emph{(ersätts av \S \ref{S:RedovisningKont})}
+    
+    \vspace{1.2em}
+    \item[] \emph{(redundant)}
+    
+\end{lydelse}
+
 \subsection{FnollK}
+Syftet är redaktionellt samt att eliminera redundans.
+Många implicita åligganden stryks.
+Schrödingers katt-memen rättas i sann fysikeranda.
+
+Härigenom föreskrivs i fråga om reglementets avsnitt 6.5
+
+\begin{dels}
+    \item att avsnittets rubrik ska lyda ''FnollK'',
+    \item att avsnittet ska omnumreras 5.4,
+    \item att avsnittet i sin helhet ska ha följande lydelse.
+\end{dels}
+
+\begin{lydelse}
+    
+    \item[] \emph{(se \S6.2.1)}
+    
+    \setcounter{section}{6}
+    \setcounter{subsection}{5}
+    
+    \item FnollK består av följande poster:
+	\begin{itemize}
+		\item Ordförande
+		\item Vice ordförande
+		\item Kassör
+		\item 0--4 ledamöter
+	\end{itemize}
+    där ordförande, vice ordförande och  kassör förtroendeposter.
+    
+    \item FnollK har en verksamhet som går från 1 januari till 31 december.
+
+	\item Vid räkenskapsårets slut skall tillgångar över 0,659 basbelopp tillfalla sektionen. Visst utrymme för representation får förekomma.
+    
+    \item Det åligger FnollK:
+	\begin{description}
+		\item[att] genomföra en värdig mottagning i enlighet med kårens och sektionens intentioner.\vspace{0.8em}
+		\item[att] arrangera aktiviteter för F- och TM-nollan som syftar till att införliva Nollan i livet som F- respektive TM-teknolog både vad gäller studier och det studiesociala livet.
+		\item[att] under ledning av FnollK:s  ordförande planera och leda dessa aktiviteter i samråd med berörda organ.
+		\item[att] tillse att valen Åke bär nollbricka om gamble så tycker.
+		\item[att] kanske tillse att Schrödingers katt kanske bär nollbricka.
+	\end{description}
+    
+    \vspace{0.3em}
+    \item Det åligger FnollK:s ordförande:
+	\begin{description}
+		\item[att] tillse att kommittéens åligganden utförs.
+		\item[att] leda och ansvara för FnollK:s arbete.
+		\item[att] fungera som kontaktlänk mellan FnollK och övriga kommittéer samt företräda FnollK i sektionsstyrelsen.
+		\item[att] tillsammans med FnollK:s kassör ansvara för FnollK:s ekonomi.
+		\item[att] representera Fysikteknologsektionen i Chalmers Studentkårs samarbetsorgan för mottagningen, MoS.
+	\end{description}
+	
+	\item Det åligger FnollK:s vice ordförande:
+			\begin{description}
+				\item[att] vara kommitténs suppleant i sektionsstyrelsen
+				\item[att] vid ordförandens frånvaro överta dennes åligganden
+			\end{description}
+
+		\item Det åligger FnollK:s kassör:
+			\begin{description}
+				\item[att] sköta och tillsammans med FnollK:s ordförande ansvara för FnollK:s ekonomi.
+				\item[att] kontinuerligt föra en granskningsbar redovisning gällande FnollK:s ekonomi.
+			\end{description}
+
+		\item Det åligger FnollK:s övriga ledamöter:
+			\begin{description}
+				\item[att] hjälpa FnollK-ordföranden i dennes uppgifter så att de utförs på bästa sätt.
+			\end{description}
+    
+    \setcounter{section}{5}
+    \setcounter{subsection}{4}
+    
+    \switchcolumn 
+    
+    \item \emph{FnollK är sektionens mottagningskommitté.}
+
+    \item FnollK består av följande poster:
+    \begin{itemize}
+        \item Ordförande
+    	\item Vice ordförande
+    	\item Kassör
+    	\item \emph{4 ledamöter}
+    \end{itemize}
+    \emph{varav} ordförande, vice ordförande och kassör är förtroendeposter.
+    
+    \item[] \emph{(ersätts av \S \ref{R:BrutnaVerksamhetsar})}\vspace{1.2em}
+    
+    \item[] \emph{(redundant)}\vspace{2.4em}
+    
+    \item Det åligger FnollK:\vspace{-0.4em}
+    \begin{aligganden}
+        \item genomföra en värdig mottagning i enlighet med kårens och sektionens \emph{anda i samråd med relevanta organ.}
+        \item arrangera aktiviteter för \emph{Nollan} som syftar till att införliva \emph{dem} i livet som \emph{teknolog vid sektionens program} både vad gäller studier och det studiesociala livet.\vspace{0.2em}
+        \item[] \emph{(redundant)}\vspace{2.6em}
+        \item tillse att valen Åke bär nollbricka om gamble så tycker.
+        \item \emph{tillse att Schrödingers katt bär nollbricka.}
+        \item \emph{tillse att Schrödingers katt ej bär nollbricka.}
+    \end{aligganden}
+    
+   
+    \item Det åligger FnollK:s ordförande: \vspace{-0.2em}
+    \begin{aligganden}
+        \item[] \emph{(redundant)}
+        \item[] \emph{(ersätts av \S \ref{R:KommitteOrdfLeda})}
+        \item[] \emph{(ersätts av \S \ref{R:KommitteOrdfRepr})}\vspace{3em}
+        \item[] \emph{(ersätts av stadga \S \ref{S:KomitteEkonomisktAnsvar})}\vspace{1.2em}
+        \item representera \emph{sektionen} i Chalmers studentkårs samarbetsorgan för mottagningen, MoS.
+    \end{aligganden}
+    
+    \vspace{2.4em}
+    \begin{aligganden}
+        \item[] \emph{(ersätts av \S \ref{R:StyretViceSuppleant})} \vspace{6.4em}
+        \item[] \emph{(ersätts av stadga \S \ref{S:KomitteEkonomisktAnsvar})}\vspace{1.6em}
+        \item[] \emph{(ersätts av stadga \S \ref{S:RedovisningKont})}\vspace{1.6em}
+        \item[] \emph{(redundant)}
+    \end{aligganden}
+\end{lydelse}
+
 \subsection{F6}
+Syftet är redaktionellt samt att eliminera redundans.
+Många implicita åligganden stryks.
+
+Härigenom föreskrivs i fråga om reglementets avsnitt 6.6
+
+\begin{dels}
+    \item att avsnittets rubrik ska lyda ''F6'',
+    \item att avsnittet ska omnumreras 5.5,
+    \item att avsnittet i sin helhet ska ha följande lydelse.
+\end{dels}
+
+\begin{lydelse}
+
+    \item[] \emph{(Se \S6.2.1)}
+    
+    \setcounter{section}{6}
+    \setcounter{subsection}{6}
+    
+    \item F6 består av följande poster:
+	\begin{itemize}
+		\item Ordförande, Sexmästare
+		\item Vice ordförande, Sexreterare
+		\item Kassör
+		\item 0--6 ledamöter
+	\end{itemize}
+    där ordförande, vice ordförande och kassör är förtroendeposter.
+
+    \item F6 har en verksamhet som går från 1 juli till 30 juni.
+
+	\item Verksamheten skall drivas i icke vinstdrivande syfte. Vid räkenskapsårets slut skall kommitténs tillgångar upp till 0,659 basbelopp övergå till nästkommande års kommitté. Tillgångar därutöver tillfaller sektionen. Visst utrymme för representation får förekomma.
+
+    \item Det åligger F6:
+	\begin{description}
+		\item[att] minst en gång per läsperiod anordna gasque.
+		\item[att] ansvara för kalas- och tentamensfestlighetsverksamhet på sektionen.
+		\item[att] vara ett komplement till FnollK under mottagningen.
+	\end{description}
+	
+	\item Det åligger F6:s ordförande, Sexmästaren:
+	\begin{description}
+		\item[att] tillse att kommitténs åligganden utförs.
+		\item[att] leda F6:s arbete.
+		\item[att] fungera som kontaktlänk mellan F6 och övriga kommittéer samt företräda F6 i sektionsstyrelsen.
+		\item[att] att vara Fysiktteknologsektionens representant i Gasquerådet, om F6 beslutar att vara medlemmar i Gasquerådet.
+		\item[att] tillsammans med kassören ansvara för F6:s ekonomi.
+	\end{description}
+	
+	\item Det åligger F6:s vice ordförande, Sexreteraren:
+	\begin{description}
+		\item[att] vid sexmästarens frånvaro utföra dennes uppgifter.
+		\item[att] vara kommitténs suppleant i sektionsstyrelsen
+	\end{description}
+
+    \item Det åligger F6:s kassör:
+	\begin{description}
+		\item[att] tillsammans med Sexmästaren ansvara för F6:s ekonomi.
+		\item[att] kontinuerligt föra en granskningsbar redovisning gällande F6:s ekonomi.
+	\end{description}
+
+    \item Det åligger F6:s övriga medlemmar:
+	\begin{description}
+		\item[att] hjälpa de förtroendevalda i F6:s verksamhet.
+	\end{description}
+
+    \setcounter{section}{5}
+    \setcounter{subsection}{5}
+
+    \switchcolumn
+
+    \item \emph{F6 är sektionens sexmästeri.}
+
+    \item F6 består av följande poster:
+    \begin{itemize}
+    	\item Ordförande, Sexmästare
+    	\item Vice ordförande, Sexreterare
+    	\item Kassör
+    	\item \emph{6 ledamöter}
+    \end{itemize}
+    \emph{varav} ordförande, vice ordförande och kassör är förtroendeposter.
+    
+    \item[] \emph{(ersätts av \S \ref{R:VanligtVerksamhetsar})}\vspace{1.2em}
+    
+    \item[] \emph{(redundant)}\vspace{5.8em}
+    
+    \item Det åligger F6:
+    \begin{aligganden}
+        \item minst en gång per läsperiod anordna gasque.
+        \item ansvara för kalas- och tentamensfestlighetsverksamhet på sektionen.
+        \item vara ett komplement till FnollK under mottagningen.
+    \end{aligganden}
+    
+    \item Det åligger F6:s ordförande, Sexmästaren:
+    \begin{aligganden}
+        \item[] \emph{(redundant)}
+        \item[] \emph{(ersätts av \S \ref{R:KommitteOrdfLeda})}
+        \item[] \emph{(ersätts av \S \ref{R:KommitteOrdfRepr})}\vspace{3em}
+        \item vara \emph{sektionens} representant i Gasquerådet \emph{om F6 så beslutar.}\vspace{1.4em}
+        \item[] \emph{(ersätts av stadga \S \ref{S:KomitteEkonomisktAnsvar})}
+    \end{aligganden}
+    
+    \vspace{2.6em}
+    \begin{aligganden}
+        \item[] \emph{(ersätts av \S \ref{R:StyretViceSuppleant})} \vspace{6.4em}
+        \item[] \emph{(ersätts av stadga \S \ref{S:KomitteEkonomisktAnsvar})}\vspace{1.6em}
+        \item[] \emph{(ersätts av stadga \S \ref{S:RedovisningKont})}\vspace{1.6em}
+        \item[] \emph{(redundant)}
+    \end{aligganden}
+    
+\end{lydelse}
+
 \subsection{Djungelpatrullen}
+Syftet är redaktionellt samt att eliminera redundans.
+Många implicita åligganden stryks.
+
+Härigenom föreskrivs i fråga om reglementets avsnitt 6.7
+
+\begin{dels}
+    \item att avsnittets rubrik ska lyda ''Djungelpatrullen'',
+    \item att avsnittet ska omnumreras 5.6,
+    \item att avsnittet i sin helhet ska ha följande lydelse.
+\end{dels}
+
+\begin{lydelse}
+    \item[] \emph{(Se \S6.2.1)}
+    
+    \setcounter{section}{6}
+    \setcounter{subsection}{7}
+    
+    \vspace{1.2em}
+    \item Djungelpatrullens poster utgörs av:
+	\begin{itemize}
+		\item Ordförande, Överste
+		\item Vice ordförande, Rustmästare
+		\item Kassör, Skattmästare
+		\item 0--7 adjutanter
+	\end{itemize}
+    där Ordförande, Vice ordförande och kassör är förtroendeposter
+
+    \item Djungelpatrullen har en verksamhet som går från 1 juli till 30 juni.
+
+    \item Verksamheten skall drivas i icke vinstdrivande syfte. Vid räkenskapsårets slut skall kommitténs tillgångar upp till 0,659 basbelopp övergå till nästkommande års kommitté. Tillgångar därutöver tillfaller sektionen. Visst utrymme för representation får förekomma.
+
+    \item Det åligger Djungelpatrullen:
+	\begin{description}
+		\item[att] tillse att sektionshelgonet vördas på ett hedersamt sätt av alla Fysikteknologsektionens medlemmar.   
+		\item[att] ansvara för att det ordnas arrangemang för medlemmarna på Fysikteknologsektionen. Dessa skall hållas i en anda som ökar sammanhållningen på Fysikteknologsektionen och ökar kontakten över årskursgränserna.
+		\item[att] vara ett komplement till FnollK under mottagningen. 
+		\item[att] sköta det löpande underhållet av Fysikteknologsektionens lokaler och egendom.
+		\item[att] vårda sektionens traditioner.
+		\item[] (se §1.1.1) 
+	\end{description}
+	
+	\vspace{1.15em}
+	\item Det åligger Djungelpatrullens ordförande, \\ Översten:
+	\begin{description}
+		\item[att] tillse att kommitténs åligganden utförs. 
+		\item[att] leda Djungelpatrullens arbete.
+		\item[att] fungera som kontaktlänk mellan Djungelpatrullen och övriga kommittéer samt företräda Djungelpatrullen i sektionsstyrelsen.
+		\item[att] tillsammans med Skattmästaren ansvara för Djungelpatrullens ekonomi.
+	\end{description}
+	
+	\item Det åligger Djungelpatrullens vice ordförande, \\ Rustmästaren:
+	\begin{description}
+		\item[att] i överstens frånvaro leda Djungelpatrullens arbete.
+		\item[att] leda renoverings- och underhållsarbeten i sektionens lokaler.
+		\item[att] ansvara för uthyrning av Focus inventarier.
+		\item[att] vara kommitténs suppleant i sektionsstyrelsen.
+	\end{description}
+	
+	\item Det åligger Djungelpatrullens kassör, Skattmästaren:
+	\begin{description}
+		\item[att] tillsammans med ordförande ansvara för och sköta Djungelpatrullens ekonomi.
+		\item[att] kontinuerligt föra en granskningsbar redovisning gällande Djungelpatrullens ekonomi.
+	\end{description}
+
+    \item Det åligger Djungelpatrullens adjutanter:
+	\begin{description}
+		\item[att] hjälpa de förtroendevalda i DP:s verksamhet.
+	\end{description}
+	
+	\setcounter{section}{5}
+    \setcounter{subsection}{6}
+    
+    \switchcolumn
+    
+    \item \emph{Djungelpatrullen är sektionens rustmästeri och PR-förening.}
+
+    \item Djungelpatrullen \emph{består av följande poster}:
+    \begin{itemize}
+        \item Ordförande, Överste
+    	\item Vice ordförande, Rustmästare
+    	\item Kassör, Skattmästare
+    	\item \emph{7 adjutanter}
+    \end{itemize}
+    \emph{varav} ordförande, vice ordförande och kassör är förtroendeposter.
+    
+    \item[] \emph{(ersätts av \S \ref{R:VanligtVerksamhetsar})}\vspace{1.2em}
+    
+    \item[] \emph{(redundant)}\vspace{6em}
+    
+    \item Det åligger Djungelpatrullen:\vspace{-0.2em}
+    \begin{aligganden}
+        \item tillse att sektionshelgonet vördas på ett hedersamt sätt av alla \emph{sektionens} medlemmar.\vspace{1.4em}
+        \item ansvara för att det ordnas arrangemang för medlemmarna på \emph{sektionen}.
+            Dessa ska hållas i en anda som ökar sammanhållningen på \emph{sektionen} och ökar kontakten över årskursgränserna.\vspace{0.2em}
+        \item vara ett komplement till FnollK under mottagningen. \vspace{0.2em}
+        \item sköta det löpande underhållet av \emph{sektionens} lokaler och egendom.\vspace{0.2em}
+        \item vårda sektionens traditioner.
+        \item tillse att sektionens förstaårsstudenter städar sektionslokalen.
+        \label{R:Nollanstad}
+    \end{aligganden}
+    
+    \vspace{1.2em}
+    \begin{aligganden}
+        \item[] \emph{(redundant)}\vspace{0.4em}
+        \item[]
+        \item[] \emph{(ersätts av \S \ref{R:KommitteOrdfLeda})}
+        \item[] \emph{(ersätts av \S \ref{R:KommitteOrdfRepr})}\vspace{0.7em}
+        \item[] \emph{(ersätts av stadga \S \ref{S:KomitteEkonomisktAnsvar})}
+    \end{aligganden}
+    
+    \vspace{1.15em}
+    \item Det åligger Djungelpatrullens vice ordförande, \\ Rustmästaren:\vspace{-0.2em}
+    \begin{aligganden}
+        \item[] \emph{(redundant)} \vspace{1.2em}
+        \item leda renoverings- och underhållsarbeten i sektionens lokaler.\vspace{0.2em}
+        \item ansvara för uthyrning av Focus inventarier.\vspace{0.2em}
+        \item[] \emph{(ersätts av \S \ref{R:StyretViceSuppleant})}
+    \end{aligganden}
+    
+    \vspace{3.8em}
+    \begin{aligganden}
+        \item[] \emph{(ersätts av stadga \S \ref{S:KomitteEkonomisktAnsvar})}\vspace{1.6em}
+        \item[] \emph{(ersätts av stadga \S \ref{S:RedovisningKont})}\vspace{1.6em}
+        \item[] \emph{(redundant)}
+    \end{aligganden}
+    
+    
+\end{lydelse}
+
 \subsection{Focumateriet}
+Syftet är redaktionellt samt att eliminera redundans.
+Många implicita åligganden stryks.
+
+Härigenom föreskrivs i fråga om reglementets avsnitt 6.8
+
+\begin{dels}
+    \item att avsnittets rubrik ska lyda ''Djungelpatrullen'',
+    \item att avsnittet ska omnumreras 5.7,
+    \item att avsnittet i sin helhet ska ha följande lydelse.
+\end{dels}
+
+\begin{lydelse}
+
+    \item[] \emph{(Se \S6.2.1)}
+    
+    \setcounter{section}{6}
+    \setcounter{subsection}{8}
+    
+    \item Focumateriets utgörs av följande poster:
+	\begin{itemize}
+		\item Ordförande, kapten
+		\item Vice ordförande, automatpirat
+		\item Kassör, kistväktare
+		\item 0--5 övriga ledamöter
+	\end{itemize}
+    där ordförande, vice ordförande och kassör är förtroendeposter.
+    
+    \item Focumateriet har en verksamhet som går från 1 juli till 30 juni.
+
+	\item Verksamheten skall drivas i icke vinstdrivande syfte. Vid räkenskapsårets slut skall kommitténs tillgångar upp till 0,659 basbelopp övergå till nästkommande års kommitté. Tillgångar därutöver tillfaller sektionen. Visst utrymme för representation får förekomma.
+    
+    \item Det åligger Focumateriet:
+	\begin{description}
+		\item[att] handha Focumaten, samt, efter sektionsstyrelsens bestämmande, av sektionen ägda automater samt av sektionen ägd elektronisk utrustning.
+	\end{description}
+	
+	\item Det åligger Focumateriets ordförande:
+	\begin{description}
+		\item[att] leda Focumateriets arbete.
+		\item[att] tillse att kommitténs åligganden efterföljs.
+		\item[att] tillsammans med kassören ansvara för kommitténs ekonomi.
+	\end{description}
+
+    \item Det åligger Focumateriets vice ordförande:
+	\begin{description}
+		\item[att] vara kommitténs suppleant i sektionsstyrelsen
+		\item[att] vid ordförandens frånvaro överta dennes åligganden
+	\end{description}
+
+    \item Det åligger Focumateriets kassör:
+	\begin{description}
+		\item[att] tillsammans med ordföranden ansvara för och sköta Focumateriets ekonomi.
+		\item[att] kontinuerligt föra en granskningsbar redovisning gällande Focumateriets ekonomi.
+	\end{description}
+
+    \item Det åligger Focumateriets övriga ledamöter:
+	\begin{description}
+		\item[att] hjälpa Focumateriordföranden att efterfölja Focumateriets åligganden.
+	\end{description}
+    
+    \setcounter{section}{5}
+    \setcounter{subsection}{7}
+    
+    \switchcolumn
+    
+    \item \emph{Focumateriet är sektionens focumateri.}
+
+    \item Focumateriet består av följande poster:
+    \begin{itemize}
+        \item Ordförande, Kapten
+    	\item Vice ordförande, Automatpirat
+    	\item Kassör, Kistväktare
+    	\item \emph{5 ledamöter}
+    \end{itemize}
+    \emph{varav} ordförande, vice ordförande och kassör är förtroendeposter.
+    
+    \item[] \emph{(ersätts av \S \ref{R:VanligtVerksamhetsar})}\vspace{1.2em}
+    
+    \item[] \emph{(redundant)}\vspace{6em}
+    
+
+    \item Det åligger Focumateriet:
+    \begin{aligganden}
+        \item \emph{handha Focumaten.}
+        \item \emph{efter sektionsstyrelsens bestämmande handha sektionens automater och annan elektronisk utrustning.}
+    \end{aligganden}
+    
+    \vspace{1em}
+    \begin{aligganden}
+        \item[] \emph{(redundant)}\vspace{0.2em}
+        \item[] \emph{(ersätts av \S \ref{R:KommitteOrdfLeda})}\vspace{0.2em}
+        \item[] \emph{(ersätts av stadga \S \ref{S:KomitteEkonomisktAnsvar})}
+    \end{aligganden}
+    
+    \vspace{2.4em}
+    \begin{aligganden}
+        \item[] \emph{(ersätts av \S \ref{R:StyretViceSuppleant})}\vspace{1.4em}
+        \item[] \emph{(redundant)}
+        
+    \end{aligganden}
+    
+    \vspace{2.8em}
+    \begin{aligganden}
+        \item[] \emph{(ersätts av stadga \S \ref{S:KomitteEkonomisktAnsvar})}\vspace{1.6em}
+        \item[] \emph{(ersätts av stadga \S \ref{S:RedovisningKont})}\vspace{1.6em}
+        \item[] \emph{(redundant)}
+    \end{aligganden}
+    
+\end{lydelse}
+
 
 \section{Sektionsföreningar}
+Syftet är redaktionellt.
+
+Härigenom föreskrivs i fråga om reglementets kapitel 7
+
+\begin{dels}
+    \item att kapitlets rubrik ska lyda ''Sektionsföreningar'',
+    \item att kapitlet ska omnumreras 6,
+    \item att avsnitt 7.1 ska utgå.
+\end{dels}
+
+\begin{lydelse}
+    \setcounter{section}{7}
+    \setcounter{subsection}{1}
+    
+    \item En person kan ej inneha två ledamotsposter i samma sektionsförening.
+	\item Ekonomisk ansvarig ska vara myndig.
+	
+	\setcounter{section}{6}
+    \setcounter{subsection}{0}
+    \switchcolumn
+    
+    \item[] \emph{(ersätts av stadga \S \ref{S:ValbarhetMaxEnFortroende})}\vspace{1.2em}
+    \item[] \emph{(ersätts av stadga \S \ref{S:ValbarEkonomiskMyndig})}
+    
+\end{lydelse}
+
 \subsection{Förteckning}
+Syftet är redaktionellt.
+
+Härigenom föreskrivs i fråga om reglementets avsnitt 7.2
+
+\begin{dels}
+    \item att avsnittets rubrik ska lyda ''Förteckning'',
+    \item att avsnittet ska omnumreras 6.1,
+    \item att avsnittet i sin helhet ska ha följande lydelse.
+\end{dels}
+
+\begin{lydelse}
+    
+    \setcounter{section}{7}
+    \setcounter{subsection}{2}
+    
+    \item Fysikteknologsektionens Sektionsföreningar är:
+	\begin{itemize}
+		\item Fabiola
+		\item Fysikteknologsektionens Idrottsförening, FIF
+		\item Foton
+		\item Game Boy.
+	\end{itemize}
+	
+	\setcounter{section}{6}
+    \setcounter{subsection}{1}
+    
+    \switchcolumn
+    
+    \item \emph{Sektionens} sektionsföreningar är:
+    \begin{itemize}
+        \item Fabiola
+    	\item FIF
+    	\item Foton
+    	\item Game Boy
+    \end{itemize}
+    
+\end{lydelse}
 \subsection{Allmänna åligganden}
+Syftet är redaktionellt.
+Lägg till krav på ordförande likt för kommittéer.
+
+Härigenom föreskrivs i fråga om reglementets avsnitt 7.3
+
+\begin{dels}
+    \item att avsnittets rubrik ska lyda ''Allmänna åligganden'',
+    \item att avsnittet ska omnumreras 6.2,
+    \item att avsnittet i sin helhet ska ha följande lydelse.
+\end{dels}
+
+\begin{lydelse}
+    
+    \setcounter{section}{7}
+    \setcounter{subsection}{3}
+    
+    \item Det åligger varje sektionsförening
+	\begin{description}
+		\item[att] följa åligganden enligt arbetsbeskrivning.
+	\end{description}
+
+    \item[] ---
+    
+    \vspace{5em}
+    \item Det åligger ekonomiskt ansvarig:
+	\begin{description}
+	    \vspace{1.5em}
+		\item[att] mot revisorerna och sektionskassören kontinuerligt redovisa för den ekonomiska situationen.
+	\end{description}
+    
+    \setcounter{section}{6}
+    \setcounter{subsection}{2}
+    
+    \switchcolumn
+    
+    \item[]
+    \item[] \emph{(implicit från \S \ref{R:ForteckningStyrdokument})}
+    
+  
+    \item \emph{Det åligger ordförande i sektionsförening:}
+    \label{R:SektForeningOrdf}
+    \begin{aligganden}
+        \item \emph{leda sektionsföreningens arbete.}
+        \item \emph{fungera som en kontaktlänk mellan sektionsföreningen och andra organ.}
+    \end{aligganden}
+    
+    \item Det åligger ekonomiskt ansvarig \emph{i sektionsförening}:
+    \label{R:SektForeningEkonomi}
+    \begin{aligganden}
+        \item mot revisorerna och sektionskassören kontinuerligt redovisa för den ekonomiska situationen.
+    \end{aligganden}
+    
+\end{lydelse}
 \subsection{Fabiola}
+Syftet är enbart redaktionellt.
+
+Härigenom föreskrivs i fråga om reglementets avsnitt 7.4
+
+\begin{dels}
+    \item att avsnittets rubrik ska lyda ''Fabiola'',
+    \item att avsnittet ska omnumreras 6.3,
+    \item att avsnittet i sin helhet ska ha följande lydelse.
+\end{dels}
+
+\begin{lydelse}
+
+    \setcounter{section}{7}
+    \setcounter{subsection}{4}
+
+    \item[] ---\vspace{1.2em}
+    
+    \item Fabiola består av 1--10 ledamöter varav en väljs internt till ordförande. Fabiola innehar inga förtroendeposter.
+    
+	\item Det åligger Fabiola:
+	\begin{description}
+		\item[att] arrangera evenemang riktade mot kvinnor och icke-binära på sektionen.
+	\end{description}   %ändrad enl sektmöte lp4 20/21
+    
+    \setcounter{section}{6}
+    \setcounter{subsection}{3}
+    
+    \switchcolumn
+    
+    \item \emph{Fabiola är sektionens förening för kvinnor och ickebinära.}
+
+    \item Fabiola består av \emph{10 ledamöter} varav en väljs internt till ordförande. Fabiola har inga förtroendeposter.
+    		
+    \item Det åligger Fabiola:
+    \begin{aligganden}
+        \item arrangera evenemang riktade mot kvinnor och \emph{ickebinära} på sektionen.
+    \end{aligganden}   %ändrad enl sektmöte lp4 20/21
+    
+\end{lydelse}
 \subsection{FIF}
+Syftet är mestadels redaktionellt.
+Bestämmelsen om ekonomiskt ansvar förtydligas.
+
+Härigenom föreskrivs i fråga om reglementets avsnitt 7.5
+
+\begin{dels}
+    \item att avsnittets rubrik ska lyda ''FIF'',
+    \item att avsnittet ska omnumreras 6.4,
+    \item att avsnittet i sin helhet ska ha följande lydelse.
+\end{dels}
+
+\begin{lydelse}
+
+    \setcounter{section}{7}
+    \setcounter{subsection}{5}
+    
+    
+    \item[] ---
+    
+    \item FIF består av följande poster:
+    \begin{itemize}
+    	\item Ordförande
+    	\item Vice ordförande
+    	\item Kassör
+    	\item 0--6 ledamöter.
+    \end{itemize}
+    Där ordförande, vice ordförande och kassör är förtroendeposter.
+    
+    \vspace{1.2em}
+    \item FIF har en verksamhet som går från 1 januari till 31 december.
+
+	\item Verksamheten skall drivas i icke vinstdrivande syfte. Vid räkenskapsårets slut skall föreningens tillgångar upp till 0,659 basbelopp övergå till nästkommande års förening. Tillgångar därutöver tillfaller sektionen. Visst utrymme för representation får förekomma.
+    
+    \item Det åligger FIF:
+	\begin{description}
+		\item[att] främja idrottskulturen på sektionen genom att arrangera regelbundna träningar.
+		\item[att] handha idrottsmaterial samt sköta utlåning av denna till sektionsmedlemmar.
+	\end{description}
+
+	\item Det åligger FIF:s ordförande:
+	\begin{description}
+  		\item[att] tillse att FIF:s åligganden utförs.
+  		\item[att] leda FIF:s arbete.
+  		\item[att] fungera som kontaktlänk mellan FIF och andra föreningar på sektionen samt tillse att kontakt med andra sektioners idrottsföreningar uppehålls.
+  		\item[att] tillsammans med kassören ansvara för FIF:s ekonomi.
+  		\item[att] tillsammans med kassören presentera ett bokslut vid det första sektionsmötet efter verksamhetsårets slut.
+	\end{description}
+	
+	\setcounter{enumi}{6}
+	
+	\item Det åligger FIF:s kassör:
+	\begin{description}
+		\item[att] tillsammans med ordföranden ansvara för FIF:s ekonomi.
+		\item[att] kontinuerligt föra en granskningsbar redovisning gällande FIF:s ekonomi.
+		\item[att] tillsammans med ordföranden presentera ett bokslut vid det första sektionsmötet efter verksamhetsårets slut.
+	\end{description}
+    
+    \setcounter{section}{6}
+    \setcounter{subsection}{4}
+    
+    \switchcolumn
+    
+    \item \emph{FIF är sektionens idrottsförening.}
+
+    \item FIF består av följande poster:
+    \begin{itemize}
+        \item Ordförande
+    	\item Vice ordförande
+    	\item Kassör
+    	\item \emph{6 ledamöter}
+    \end{itemize}
+    \emph{varav} ordförande, vice ordförande och kassör är förtroendeposter.
+    \emph{Ordförande och kassör är ekonomiskt ansvariga.} \label{R:FIFekansvar}
+    
+    \item[] \emph{(ersätts av \S \ref{R:BrutnaVerksamhetsar})}\vspace{1.2em}
+    
+    \item[] \emph{(redundant)}\vspace{6em}
+    
+    \item Det åligger FIF:
+    \begin{aligganden}
+        \item främja idrottskulturen på sektionen genom att arrangera regelbundna träningar.
+        \item handha idrottsmaterial samt sköta utlåning av denna till sektionsmedlemmar.
+    \end{aligganden}
+    
+    \item Det åligger FIF:s ordförande:\vspace{-0.4em}
+    \begin{aligganden}
+        \item[] \emph{(ersätts av \S \ref{R:SektForeningOrdf})}
+        \item[] \emph{(ersätts av \S \ref{R:SektForeningOrdf})}\vspace{0.4em}    
+        \item tillse att kontakt \emph{med andra sektioners idrottsföreningar} uppehålls.\vspace{2.6em}
+        \item[] \emph{(ersätts av \S \ref{R:FIFekansvar})}%Note: Tror inte det gäller för sektionsföreningar per default
+        \vspace{1em}
+        \item[] \emph{(ersätts av \S \ref{R:FIFred})}%Tror inte det gäller för sektionsföreningar per default
+    \end{aligganden}
+    
+    \vspace{2.2em}
+    \item Det åligger FIF:s kassör:
+    \begin{aligganden}
+        \item[] \emph{(ersätts av \S \ref{R:FIFekansvar})}\vspace{1.2em}
+        \item[] \emph{(ersätts av \S \ref{R:SektForeningEkonomi})}\vspace{1.4em}
+        \item[] \emph{(ersätts av \S \ref{R:SektForeningEkonomi})}
+    \end{aligganden}
+    
+\end{lydelse}
 \subsection{Foton}
+Syftet är enbart redaktionellt.
+
+Härigenom föreskrivs i fråga om reglementets avsnitt 7.6
+
+\begin{dels}
+    \item att avsnittets rubrik ska lyda ''Foton'',
+    \item att avsnittet ska omnumreras 6.5,
+    \item att avsnittet i sin helhet ska ha följande lydelse.
+\end{dels}
+
+\begin{lydelse}
+    
+    \setcounter{section}{7}
+    \setcounter{subsection}{6}
+    
+    \item[] ---
+    
+    \item Foton består av 1--6 ledamöter varav en väljs internt till ordförande. Foton innehar inga förtroendeposter.
+	
+	\item Det åligger Foton:
+	\begin{description}
+		\item[att] löpande dokumentera sektionens arrangemang.
+		\item[att] i samband med arbetsmarknadsmässor arrangera porträttfotografering.
+		\item[att] stödja sektionens kommittéer och nämnder vid behov av filmning eller fotografering.
+	\end{description}
+		
+    \setcounter{section}{6}
+    \setcounter{subsection}{5}
+    
+    \switchcolumn
+    
+    \item \emph{Foton är sektionens fotoförening.}
+
+    \item Foton består av \emph{6 ledamöter} varav en väljs internt till ordförande. Foton har inga förtroendeposter.
+    
+    \vspace{1.2em}
+    \item Det åligger Foton:
+    \begin{aligganden}
+        \vspace{-0.2em}
+        \item löpande dokumentera sektionens arrangemang.\vspace{0.2em}
+        \item i samband med arbetsmarknadsmässor arrangera porträttfotografering.\vspace{0.2em}
+        \item stödja sektionens kommittéer och nämnder vid behov av filmning eller fotografering.
+    \end{aligganden}
+    
+\end{lydelse}
 \subsection{Gameboy}
-\subsection{Finform}
+Syftet är enbart redaktionellt.
+
+Härigenom föreskrivs i fråga om reglementets avsnitt 7.7
+
+\begin{dels}
+    \item att avsnittets rubrik ska lyda ''Gameboy'',
+    \item att avsnittet ska omnumreras 6.6,
+    \item att avsnittet i sin helhet ska ha följande lydelse.
+\end{dels}
+
+\begin{lydelse}
+    \setcounter{section}{7}
+    \setcounter{subsection}{7}
+    
+    \item[] ---
+    
+    \item Game Boy består av 0--6 Game Boys. Game Boy har inga förtroendeposter.
+    
+    \item Det åligger Game Boy:
+    \begin{description}
+        \item[att] ta hand om de sällskapsspel som finns på Focus.
+        \item[att] främja brädspelsverksamheten på Fysikteknologsektionen.
+    \end{description}
+		
+    \setcounter{section}{6}
+    \setcounter{subsection}{6}
+    \switchcolumn
+    
+    \item \emph{Game Boy är sektionens brädspelsförening.}
+
+    \item Game Boy består av \emph{6 Game Boys}. Game Boy har inga förtroendeposter.
+    	    
+    \item Det åligger Game Boy:
+    \begin{aligganden}
+        \vspace{-0.4em}
+        \item ta hand om de sällskapsspel som finns på Focus.\vspace{0.2em}
+    	\item främja brädspelsverksamheten på \emph{sektionen}.
+    \end{aligganden}
+    
+\end{lydelse}
 
 \section{Funktionärer}
+Syftet är mestadels redaktionellt. Några mindre ändringar för individuella funktionärer förekommer.
+
+Härigenom föreskrivs i fråga om reglementets kapitel 8
+
+\begin{dels}
+    \item att kapitlets rubrik ska lyda ''Funktionärer'',
+    \item att kapitlet ska omnumreras 7,
+    \item att avnitt 8.2 ska utgå.
+\end{dels}
+
+
+\subsection{Förteckning}
+Syftet är enbart redaktionellt. De längre beskrivande titlarna flyttas till respektive förenings avsnitt.
+
+Härigenom föreskrivs i fråga om reglementets avsnitt 8.1
+
+\begin{dels}
+    \item att avsnittets rubrik ska lyda ''Förteckning'',
+    \item att avsnittet ska omnumreras 7.1,
+    \item att avsnittet i sin helhet ska ha följande lydelse.
+\end{dels}
+
+\begin{lydelse}
+    \setcounter{section}{8}
+    
+    \item Fysikteknologsektionens sektionsfunktionärer är:
+	\begin{itemize}
+		\item Fysikteknologsektionens informationsskrift, Finform
+		\item Sångförmännen
+		\item Revisorer
+		\item Fysikteknologsektionens skyddshelgon, Dragos
+		\item Fanfareriet
+		\item Bilnissar
+		\item Blodgruppen
+		\item Kräldjursvårdare
+		\item Dumvästinnehavare
+		\item Bakisclubben (BC)
+		\item Fysikteknologsektionens webbgrupp, Spidera
+		\item Sektionsnörd
+		\item Balnågonting
+		\item Piff och Puff
+		\item JämF
+		\item Mastermottagningsansvarig
+		\item Frisörer.
+	\end{itemize}
+    
+    \setcounter{section}{7}
+    \switchcolumn
+    
+    \item \emph{Sektionens} funktionärer är:
+    \begin{itemize}
+        \item Finform\vspace{1.2em}
+    	\item Sångförmännen
+    	\item Revisorer
+    	\item \emph{Dragos}\vspace{1.2em}
+    	\item Fanfareriet
+    	\item Bilnissar
+    	\item Blodgruppen
+    	\item Kräldjursvårdare
+    	\item Dumvästinnehavare
+    	\item \emph{Bakisclubben}
+    	\item \emph{Spidera} \vspace{1.2em}
+    	\item Sektionsnörd
+    	\item Balnågonting
+    	\item Piff och Puff
+    	\item JämF
+    	\item Mastermottagningsansvarig
+    	\item Frisörer.
+    \end{itemize}
+    
+\end{lydelse}
+
+\subsection{Finform}
+Syftet är redaktionellt.
+
+Härigenom föreskrivs i fråga om reglementets avsnitt 8.3
+
+\begin{dels}
+    \item att avsnittets rubrik ska lyda ''Finform'',
+    \item att avsnittet ska omnumreras 7.2,
+    \item att avsnittet i sin helhet ska ha följande lydelse.
+\end{dels}
+
+\begin{lydelse}
+    \setcounter{section}{8}
+    \setcounter{subsection}{3}
+    
+    
+    \item Finform är Fysikteknologsektionens informationsskrift och skall på ett lättillgängligt sätt presentera intressanta fakta, skämt och skvaller. 
+    
+    \item Finforms redaktion består av chefredaktör tillika ansvarig utgivare, kassör samt 2--8 redaktörer.
+    
+    \vspace{7.1em}
+    \item Ansvarig utgivare för Finform tillträder efter inregistrering enligt gällande lag.
+
+    \item Det åligger Finform-redaktionen:
+	\begin{description}
+		\item[att] producera minst 4 nummer av Finform per läsår, med fördelningen 2 på hösten och 2 på våren.
+		\item[att] ansvara för tryckning och distribution.
+	\end{description}
+    
+    \vspace{2.5em}
+    \item Det åligger Finforms chefredaktör:
+	\begin{description}
+		\item[att] vara ansvarig utgivare.
+		\item[att] tillse att Finforms åliggande utförs.
+		\item[att] leda Finforms arbete.
+	\end{description}
+	
+
+	\item Det åligger Finforms kassör:
+	\begin{description}
+		\item[att] tillsammans med chefredaktören ansvara för Finforms ekonomi.
+		\item[att] ansvara för att Finforms ekonomiska anslag används inom av sektionsstyrelsen fastställd ram.
+	\end{description}
+
+    \item Det åligger Finforms ansvariga utgivare:
+	\begin{description}
+		\item[att] kontrollera Finform så att Finform inte agerar olagligt, kränkande eller på annat sätt olämpligt.
+		\item[att] Finform agerar på ett lämpligt sätt för att vara Fysikteknologsektionens officiella informationsskrift.
+	\end{description}
+
+    \setcounter{section}{6}
+    \setcounter{subsection}{7}
+    \switchcolumn
+    
+    \item Finform är sektionens informationsskrift och ska på ett lättillgängligt sätt presentera intressanta fakta, skämt och skvaller. 
+    
+    \item \emph{Finform består av följande poster:}
+    \label{R:FinformPoster}
+    \begin{itemize}
+        \item \emph{Chefredaktör tillika ansvarig utgivare}
+    	\item \emph{Kassör}
+    	\item \emph{8 redaktörer}
+    \end{itemize}
+    
+    \item Ansvarig utgivare för Finform tillträder efter inregistrering enligt gällande lag.
+    
+    \item Det åligger Finformredaktionen:
+    \begin{aligganden}
+        \vspace{-0.4em}
+        \item producera minst 4 nummer av Finform per läsår, varav minst 2 på hösten och minst 2 på våren.\vspace{0.2em}
+        \item ansvara för tryckning och distribution av Finform.
+    \end{aligganden}
+    
+    \item Det åligger Finforms chefredaktör:
+    \label{R:FinformChef}
+    \begin{aligganden}
+        \vspace{-0.2em}
+        \item[] \emph{(ersätts av \S \ref{R:FinformPoster})}\vspace{0.2em}
+        \item[] \emph{(redundant)}\vspace{0.2em}
+        \item leda Finforms arbete.
+        \item \emph{tillse att Finform inte agerar olagligt, kränkande eller på annat olämpligt sätt.}
+        \item \emph{tillse att Finform agerar på ett lämpligt sätt för att vara sektionens officiella informationsskrift.}
+    \end{aligganden}
+    
+    \item Det åligger Finforms kassör:
+    \begin{aligganden}
+        \vspace{-0.2em}
+        \item \emph{tillsammans med chefredaktören} ansvara för att Finforms ekonomiska anslag används inom av sektionsstyrelsen fastställd ram.
+    \end{aligganden}
+    
+    \begin{aligganden}
+        \item[] \emph{(ersätts av \S \ref{R:FinformChef})}\vspace{2.6em}
+        \item[] \emph{(ersätts av \S \ref{R:FinformChef})}
+    \end{aligganden}
+    
+\end{lydelse}
+
+\setcounter{section}{7}
+\setcounter{subsection}{2}
 \subsection{Sångförmän}
+Syftet är enbart redaktionellt.
+
+Härigenom föreskrivs i fråga om reglementets avsnitt 8.4
+
+\begin{dels}
+    \item att avsnittets rubrik ska lyda ''Sångförmän'',
+    \item att avsnittet ska omnumreras 7.3,
+    \item att avsnittet i sin helhet ska ha följande lydelse.
+\end{dels}
+
+\begin{lydelse}
+    \setcounter{section}{8}
+    \setcounter{subsection}{4}
+    
+    \item Sångförmännens syfte är att förvalta och bevara sektionens sångtraditioner.
+
+	\item Sångförmännen är till antalet 0--6.
+    
+    \setcounter{section}{7}
+    \setcounter{subsection}{3}
+    \switchcolumn
+    
+    \item Sångförmännens syfte är att förvalta och bevara sektionens sångtraditioner.
+
+    \item Sångförmännen är\emph{ 6 till antalet}.
+    
+\end{lydelse}
+
 \subsection{Dragos}
+Syftet är enbart redaktionellt.
+
+Härigenom föreskrivs i fråga om reglementets avsnitt 8.5
+
+\begin{dels}
+    \item att avsnittets rubrik ska lyda ''Dragos'',
+    \item att avsnittet ska omnumreras 7.4.
+\end{dels}
+\begin{lydelse}
+    \setcounter{section}{8}
+    \setcounter{subsection}{5}
+    
+    \item Dragos är sektionens högste beskyddare, och utövar Fanfareriets högsta befäl.
+    
+    \setcounter{section}{7}
+    \setcounter{subsection}{3}
+    \switchcolumn
+    
+    \item Dragos är sektionens högste beskyddare, och utövar Fanfareriets högsta befäl.
+    
+\end{lydelse}
+
 \subsection{Fanfareriet}
+Syftet är enbart redaktionellt.
+
+Härigenom föreskrivs i fråga om reglementets avsnitt 8.6
+
+\begin{dels}
+    \item att avsnittets rubrik ska lyda ''Fanfareriet'',
+    \item att avsnittet ska omnumreras 7.5,
+    \item att avsnittet i sin helhet ska ha följande lydelse.
+\end{dels}
+\begin{lydelse}
+    \setcounter{section}{8}
+    \setcounter{subsection}{6}
+    
+    \item Fanfareriets syfte är att ta hand om sektionens fanor och flaggor.
+
+	\item Fanfareriet består av en flaggmarskalk och 1-2 fanbärare.
+    
+    \setcounter{section}{7}
+    \setcounter{subsection}{5}
+    \switchcolumn
+    
+    \item Fanfareriets syfte är att ta hand om sektionens fanor och flaggor.
+
+    \item Fanfareriet består av en flaggmarskalk och \emph{2 fanbärare}.
+    
+\end{lydelse}
+
 \subsection{Bilnissar}
+Syftet är enbart redaktionellt.
+
+Härigenom föreskrivs i fråga om reglementets avsnitt 8.7
+
+\begin{dels}
+    \item att avsnittets rubrik ska lyda ''Bilnissar'',
+    \item att avsnittet ska omnumreras 7.6.
+\end{dels}
+\begin{lydelse}
+    \setcounter{section}{8}
+    \setcounter{subsection}{7}
+    
+    \item Bilnissarna består av en ekonomisk bilnisse samt en mekanisk bilnisse.
+
+	\item Det åligger Bilnissarna:
+	\begin{description}
+		\item[att] ansvara för de motorfordon som sektionsstyrelsen beslutat om, dock endast sådana som sektionen helt eller delvis förfogar över.
+		\item[att] ansvara för uthyrning av dessa fordon, enligt taxa fastställd av sektionsstyrelsen.
+	\end{description}
+
+	\item Det åligger ekonomisk bilnisse:
+	\begin{description}
+		\item[att] vara sektionskassören behjälplig vid ekonomiska ärenden rörande bilnisse.
+	\end{description}
+
+	\item Det åligger mekanisk bilnisse:
+	\begin{description}
+		\item[att] tillse att ovannämnda fordon underhålls och repareras på ett tillfredsställande sätt.
+	\end{description}
+    
+    \setcounter{section}{7}
+    \setcounter{subsection}{6}
+    \switchcolumn
+    
+    \item Bilnissarna består av en ekonomisk bilnisse samt en mekanisk bilnisse.
+
+    \item Det åligger Bilnissarna:
+    \begin{aligganden}
+        \vspace{-0.4em}
+        \item ansvara för de motorfordon som sektionsstyrelsen beslutat om, dock endast sådana som sektionen helt eller delvis förfogar över.\vspace{0.4em}
+        \item ansvara för uthyrning av dessa fordon, enligt taxa fastställd av sektionsstyrelsen.
+    \end{aligganden}
+    
+    \item Det åligger ekonomisk bilnisse:
+    \begin{aligganden}
+        \vspace{-0.4em}
+        \item vara sektionskassören behjälplig vid ekonomiska ärenden rörande bilnisse.
+    \end{aligganden}
+    
+    \item Det åligger mekanisk bilnisse:
+    \begin{aligganden}
+        \vspace{-0.4em}
+        \item tillse att ovannämnda fordon underhålls och repareras på ett tillfredsställande sätt.
+    \end{aligganden}
+    
+\end{lydelse}
+
 \subsection{Blodgruppen}
+Syftet är enbart redaktionellt.
+
+Härigenom föreskrivs i fråga om reglementets avsnitt 8.8
+
+\begin{dels}
+    \item att avsnittets rubrik ska lyda ''Blodgruppen'',
+    \item att avsnittet ska omnumreras 7.7,
+    \item att avsnittet i sin helhet ska ha följande lydelse.
+\end{dels}
+\begin{lydelse}
+    \setcounter{section}{8}
+    \setcounter{subsection}{8}
+    
+    \item Blodgruppens syfte är att uppmuntra sektionsmedlemmarna till att lämna blod
+
+	\item Blodgruppen består av en ansvarig och 1--4 ledamöter.
+    
+    \setcounter{section}{7}
+    \setcounter{subsection}{7}
+    \switchcolumn
+    
+    \item Blodgruppens syfte är att uppmuntra sektionsmedlemmarna till att lämna blod.
+
+    \item Blodgruppen består av \emph{fem ledamöter varav en väljs internt till ordförande}.
+    
+\end{lydelse}
+
 \subsection{Kräldjursvårdare}
+Syftet är enbart redaktionellt.
+
+Härigenom föreskrivs i fråga om reglementets avsnitt 8.9
+
+\begin{dels}
+    \item att avsnittets rubrik ska lyda ''Kräldjursvårdare'',
+    \item att avsnittet ska omnumreras 7.8,
+    \item att avsnittet i sin helhet ska ha följande lydelse.
+\end{dels}
+\begin{lydelse}
+    \setcounter{section}{8}
+    \setcounter{subsection}{9}
+    
+    \item Kräldjursvårdarens syfte är att ta hand om sektionens slang, Tilde.
+
+	\item Det ska finnas en kräldjursvårdare på sektionen.
+
+	\item Sektionen skall inte ha kräldjur på Focus.
+    
+    \setcounter{section}{7}
+    \setcounter{subsection}{8}
+    \switchcolumn
+    
+    \item Kräldjursvårdarens syfte är att ta hand om sektionens slang, Tilde.
+
+    \item Det ska finnas en kräldjursvårdare på sektionen.
+    
+    \item Sektionen \emph{ska} inte ha kräldjur på Focus.
+    
+\end{lydelse}
+
 \subsection{Dumvästinnehavare}
+Syftet är enbart redaktionellt.
+
+Härigenom föreskrivs i fråga om reglementets avsnitt 8.10
+
+\begin{dels}
+    \item att avsnittets rubrik ska lyda ''Dumvästinnehavare'',
+    \item att avsnittet ska omnumreras 7.9.
+\end{dels}
+\begin{lydelse}
+    \setcounter{section}{8}
+    \setcounter{subsection}{10}
+    
+	\item Det ska väljas en Dumvästinnehavare på varje sektionsmöte.
+
+	\item Den, som med avsikt att erhålla Dumvästen utfört dumheter bör ej vara kvalificerad till denna.
+	
+	\item Kriminella handlingar är ej kvalificerade till Dumvästen, såvida inte sektionsmötet anser detta.
+	
+	\item Om ej tillräckligt kvalificerad dumhet nomineras, kvarstår Dumvästen hos innehavaren för tillfället.
+	
+	\item Förteckning över Dumvästinnehavare genom tiderna tillhandahålls av sektionsstyrelsen.
+    
+    \setcounter{section}{7}
+    \setcounter{subsection}{9}
+    \switchcolumn
+    
+    \item Det ska väljas en Dumvästinnehavare på varje sektionsmöte.
+    
+    \item Den, som med avsikt att erhålla Dumvästen utfört dumheter bör ej vara kvalificerad till denna.
+    		
+    \item Kriminella handlingar är ej kvalificerade till Dumvästen, såvida inte sektionsmötet anser detta.
+    		
+    \item Om ej tillräckligt kvalificerad dumhet nomineras, kvarstår Dumvästen hos innehavaren för tillfället.
+    		
+    \item Förteckning över Dumvästinnehavare genom tiderna tillhandahålls av sektionsstyrelsen.
+    
+\end{lydelse}
+
 \subsection{Bakisclubben}
+Syftet är enbart redaktionellt.
+
+Härigenom föreskrivs i fråga om reglementets avsnitt 8.11
+
+\begin{dels}
+    \item att avsnittets rubrik ska lyda ''Bakisclubben'',
+    \item att avsnittet ska omnumreras 7.10,
+    \item att avsnittet i sin helhet ska ha följande lydelse.
+\end{dels}
+\begin{lydelse}
+    \setcounter{section}{8}
+    \setcounter{subsection}{11}
+    
+    \item Bakisclubben (BC) ska främja bakverksamheten på sektionen.
+
+	\item BC består av 0--6 bakisar.
+
+	\item Det åligger Bakisclubben:
+	\begin{description}
+		\item[att] tillse att kanelbullar bakas inför samt att dessa kanelbullar är tillgängliga på Focus för alla sektionsmedlemmar att avnjuta i samband med Kanelbullens dag.
+	\end{description}
+    
+    \setcounter{section}{7}
+    \setcounter{subsection}{10}
+    \switchcolumn
+    
+    \item \emph{Bakisclubbens} syfte är att främja bakverksamheten på sektionen.
+
+    \item \emph{Bakisclubben} består av \emph{6 bakisar}.
+    
+    \item Det åligger Bakisclubben:
+    \begin{aligganden}
+        \item \emph{inför Kanelbullens dag tillse att kanelbullar bakas och görs tillgängliga på Focus för alla sektionsmedlemmar att avnjuta.}
+    \end{aligganden}
+    
+\end{lydelse}
+
 \subsection{Spidera}
+Syftet är mestadels redaktionellt.
+Åliggandet att nätmästaren är länken mellan Spidera och sektionsstyrelsen slopas då Informationsansvarig är mer naturlig.
+
+Härigenom föreskrivs i fråga om reglementets avsnitt 8.12
+
+\begin{dels}
+    \item att avsnittets rubrik ska lyda ''Spidera'',
+    \item att avsnittet ska omnumreras 7.11,
+    \item att avsnittet i sin helhet ska ha följande lydelse.
+\end{dels}
+\begin{lydelse}
+    \setcounter{section}{8}
+    \setcounter{subsection}{12}
+    
+    \item[] ---
+    
+    \item Spidera består av en nätmästare, informationsansvarig från sektionsstyrelsen samt 1--9 nätmakare. Sektionsmötet väljer 2--10 teknologer till Spidera, som i samråd med sektionsstyrelsen utser en nätmästare.
+
+	\item Det åligger Spidera:
+	\begin{description}
+		\item[att] administrera och utveckla Fysikteknologsektionens internetportal.
+	\end{description}
+
+	\item Det åligger Spideras nätmästare:
+	\begin{description}
+	    \item[] ---
+		\item[att] tillse att ansvarig för av Spidera disponerad hårdvara är medlem i Spidera.
+		\item[att] fungera som länk mellan sektionsstyrelsen och Spidera.
+		\item[att] kalla till möte med Spidera.
+	\end{description}
+    
+    \setcounter{section}{7}
+    \setcounter{subsection}{11}
+    \switchcolumn
+    
+    \item \emph{Spideras syfte är att ansvara för sektionens IT.}
+
+    \item Spidera består av \emph{10 nätmakare samt informationsansvarig från sektionsstyrelsen.
+    Av dessa väljs en internt till nätmästare i samråd med sektionsstyrelsen.}
+    
+    \vspace{1.2em}
+    \item Det åligger Spidera:
+    \begin{aligganden}
+        \vspace{-0.4em}
+        \item administrera och utveckla Fysikteknologsektionens internetportal.
+    \end{aligganden}
+    
+    \item Det åligger Spideras nätmästare:
+    \begin{aligganden}
+        \vspace{-0.4em}
+    	\item \emph{leda Spideras arbete.}\vspace{0.2em}
+        \item tillse att ansvarig för av Spidera disponerad hårdvara är medlem i Spidera.\vspace{0.4em}
+        \item[] \emph{(sköts av Informationsansvarig)}\vspace{1.4em}
+        \item[] \emph{(redundant)}
+    \end{aligganden}
+    
+\end{lydelse}
+
 \subsection{Sektionsnörd}
+Syftet är att eliminera redundans.
+Funktionären har endast en post och därmed kan det bara väljas en till posten.
+Sektionsmötet är därefter ålagd att välja in den.
+
+Härigenom föreskrivs i fråga om reglementets avsnitt 8.13
+
+\begin{dels}
+    \item att avsnittets rubrik ska lyda ''Sektionsnörd'',
+    \item att avsnittet ska omnumreras 7.12,
+    \item att avsnittet i sin helhet ska ha följande lydelse.
+\end{dels}
+\begin{lydelse}
+    \setcounter{section}{8}
+    \setcounter{subsection}{13}
+    
+    \item Sektionsnördens syfte är att ta hand om allting som rör sektionens prenumeration av Fantomen
+
+	\item Det ska väljas en sektionsnörd
+    
+    \setcounter{section}{7}
+    \setcounter{subsection}{12}
+    \switchcolumn
+    
+    \item Sektionsnördens syfte är att ta hand om allting som rör sektionens prenumeration av Fantomen.
+    
+    \item[] \emph{(redundant)}
+    
+\end{lydelse}
+
 \subsection{Balnågonting}
+Syftet är enbart redaktionellt.
+
+Härigenom föreskrivs i fråga om reglementets avsnitt 8.14
+
+\begin{dels}
+    \item att avsnittets rubrik ska lyda ''Balnågonting'',
+    \item att avsnittet ska omnumreras 7.13,
+    \item att avsnittet i sin helhet ska ha följande lydelse.
+\end{dels}
+\begin{lydelse}
+    \setcounter{section}{8}
+    \setcounter{subsection}{14}
+    
+    \item Balnågontings syfte är att anordna bal, middag samt kringaktiviteter som tillhör balen
+
+	\item Balnågonting har 0--5 medlemmar.
+    
+    \setcounter{section}{7}
+    \setcounter{subsection}{13}
+    \switchcolumn
+    
+    \item Balnågontings syfte är att anordna bal, middag samt kringaktiviteter som tillhör balen.
+
+    \item Balnågonting har \emph{5 medlemmar}.
+    
+\end{lydelse}
+
 \subsection{Piff och Puff}
+Syftet är enbart redaktionellt.
+
+Härigenom föreskrivs i fråga om reglementets avsnitt 8.15
+
+\begin{dels}
+    \item att avsnittets rubrik ska lyda ''Piff och Puff'',
+    \item att avsnittet ska omnumreras 7.14,
+    \item att avsnittet i sin helhet ska ha följande lydelse.
+\end{dels}
+\begin{lydelse}
+    \setcounter{section}{8}
+    \setcounter{subsection}{15}
+    
+    \item Piff och Puff är sektionens aktivitetsgrupp, och syftar till att hjälpa sektionen engagera och underhålla fler sektionsmedlemmar, samt hjälpa sektionsmedlemmar med vägledning och tips om hur aktiviteter för sektionsmedlemmar kan genomföras.
+
+	\item Piff och Puff består av 0--4 Piffar.
+    
+    \setcounter{section}{7}
+    \setcounter{subsection}{14}
+    \switchcolumn
+    
+    \item Piff och Puff är sektionens aktivitetsgrupp, och syftar till att hjälpa sektionen engagera och underhålla fler sektionsmedlemmar, samt hjälpa sektionsmedlemmar med vägledning och tips om hur aktiviteter för sektionsmedlemmar kan genomföras.
+
+    \item Piff och Puff består av \emph{4 piffar}.
+    
+\end{lydelse}
+
 \subsection{JämF}
+Syftet är enbart redaktionellt.
+
+Härigenom föreskrivs i fråga om reglementets avsnitt 8.16
+
+\begin{dels}
+    \item att avsnittets rubrik ska lyda ''JämF'',
+    \item att avsnittet ska omnumreras 7.15,
+    \item att avsnittet i sin helhet ska ha följande lydelse.
+\end{dels}
+\begin{lydelse}
+    \setcounter{section}{8}
+    \setcounter{subsection}{16}
+    
+    \item JämF är sektionens jämlikhetsråd, och syftar till att arbeta för en mer jämlik sektion där alla känner sig välkomna.
+	    
+    \item JämF består av sektionsstyrelsens skyddsombud, en representant vardera från de kommittéer och sektionsföreningar där intresse för medlemskap finns, samt 4--6 fristående ledamöter varav en väljs internt till ordförande. %sektmöte 1 lp3 21/22
+    
+    \setcounter{section}{7}
+    \setcounter{subsection}{15}
+    \switchcolumn
+    
+    \item JämF är sektionens jämlikhetsråd, och syftar till att arbeta för en mer jämlik sektion där alla känner sig välkomna.
+	    
+    \item JämF består av sektionsstyrelsens skyddsombud, en representant vardera från de kommittéer och sektionsföreningar där intresse för medlemskap finns, \emph{samt 6 fristående ledamöter}.
+    Av dessa väljs en internt till ordförande.
+    
+\end{lydelse}
+
 \subsection{Mastermottagningsansvarig}
+Syftet är att eliminera redundans.
+Funktionären har endast en post och därmed kan det bara väljas en till posten.
+Sektionsmötet är därefter ålagd att välja in den.
+
+Härigenom föreskrivs i fråga om reglementets avsnitt 8.17
+
+\begin{dels}
+    \item att avsnittets rubrik ska lyda ''Mastermottagningsansvarig'',
+    \item att avsnittet ska omnumreras 7.16,
+    \item att avsnittet i sin helhet ska ha följande lydelse.
+\end{dels}
+\begin{lydelse}
+    \setcounter{section}{8}
+    \setcounter{subsection}{17}
+    
+    \item Mastermottagningsansvarigs syfte är att vara med och arrangera en mastermottagning vid utbildningsområdet som sektionens kandidatprogram tillhör.
+        
+    \item Mastermottagningsansvarig är en till antalet.
+    
+    \item Det åligger mastermottagningsansvarig
+    \begin{description}
+        \item[att] tillsammans med andra mastermottagningsansvariga vid utbildningsområdet för sektionens kandidatprogram arrangera en mottagning för nya studenter vid relaterade masterprogram.
+    \end{description}
+    
+    \setcounter{section}{7}
+    \setcounter{subsection}{16}
+    \switchcolumn
+    
+    \item Mastermottagningsansvarigs syfte är att vara med och arrangera en mastermottagning vid utbildningsområdet som sektionens kandidatprogram tillhör.
+        
+    \item[] \emph{(redundant)}  
+    
+    \item Det åligger mastermottagningsansvarig
+    \begin{aligganden}
+        \vspace{-0.4em}
+        \item tillsammans med andra mastermottagningsansvariga vid utbildningsområdet för sektionens kandidatprogram arrangera en mottagning för nya studenter vid relaterade masterprogram.
+    \end{aligganden}
+    
+\end{lydelse}
+
 \subsection{Frisörer}
+Syftet är enbart redaktionellt.
+
+Härigenom föreskrivs i fråga om reglementets avsnitt 8.18
+
+\begin{dels}
+    \item att avsnittets rubrik ska lyda ''Frisörer'',
+    \item att avsnittet ska omnumreras 7.17,
+    \item att avsnittet i sin helhet ska ha följande lydelse.
+\end{dels}
+\begin{lydelse}
+    \setcounter{section}{8}
+    \setcounter{subsection}{18}
+    
+    \item Frisörernas syfte är att sköta om F-sektionens sektionssten, Einsten.
+        
+    \item Frisörerna är till antalet 0--2.
+    
+    \setcounter{section}{7}
+    \setcounter{subsection}{17}
+    \switchcolumn
+    
+    \item Frisörernas syfte är att sköta om \emph{sektionens} sektionssten, Einsten.
+        
+    \item Frisörerna är till \emph{antalet 2}.
+    
+\end{lydelse}
 
 \section{Intresseföreningar}
-\subsection{Förteckning}
+Syftet är enbart redaktionellt.
 
-\section{Talmanspresidiet}
-\subsection{Åligganden}
+Härigenom föreskrivs i fråga om reglementets kapitel 9
+
+\begin{dels}
+    \item att kapitlets rubrik ska lyda ''Intresseföreningar'',
+    \item att kapitlet ska omnumreras 8,
+    \item att kapitlet i sin helhet ska ha följande lydelse.
+\end{dels}
+
+\subsection{Förteckning}
+\begin{lydelse}
+    
+    \item[] (se \S9.1, \S9.2, \S9.3, \S9.4)
+   
+    \switchcolumn
+    
+    \item \emph{Sektionens intresseföreningar är}
+    \begin{itemize}
+        \item \emph{F-spexet} \\
+            {\itshape F-spexets syftet är att årligen verka för att sätta upp ett spex, och på så sätt sprida spexkulturen i Göteborgsområdet allt medan spexets medlemmar har roligt.}
+        \item \emph{3Dteamet} \\
+            {\itshape 3Dteamets syfte är att verka för att till sina medlemmar tillgängliggöra 3D-skrivare och annan utrustning som föreningen har att tillgå samt att administrera och underhålla utrustning och hemsida.}
+        \item \emph{FyS} \\
+            {\itshape Fysikteknologsektionens spelförenings syfte är att främja intresset av digitala spel på sektionen.}
+    \end{itemize}
+    
+\end{lydelse}
 
 \section{Valberedningen}
+Syftet är att eliminera redundans med övriga delar av reglemente och stadga. 
+
+Härigenom föreskrivs i fråga om reglementets kapitel 3
+
+\begin{dels}
+    \item att kapitlets rubrik ska lyda ''Valberedningen''
+    \item att kapitlet ska omnumreras 9
+\end{dels}
+
 \subsection{Åligganden}
+Syftet är att eliminera redundans med övriga delar av reglemente och stadga. 
+
+Härigenom föreskrivs i fråga om reglementets avsnitt 3.1
+
+\begin{dels}
+    \item att avsnittets rubrik ska lyda ''Åligganden'',
+    \item att avsnittet ska omnumreras 9.1,
+    \item att avsnittet i sin helhet ska ha följande lydelse.
+\end{dels}
+
+\begin{lydelse}
+    \setcounter{section}{3}
+    \setcounter{subsection}{1}
+
+    \item Det åligger valberedningen att ansvara för nomineringen till följande poster:
+	\begin{itemize}
+		\item Samtliga poster i sektionsstyrelsen
+		\item Samtliga förtroendeposter
+		\item Övriga poster i SNF
+		\item Övriga ledamöter i Djungelpatrullen
+		\item Övriga ledamöter i F6
+		\item Övriga ledamöter i Focumateriet
+		\item Övriga ledamöter i FARM
+		\item Övriga ledamöter i FnollK.
+	\end{itemize}
+	
+	\item Det åligger valberedningen att anslå nomineringar till poster i sektionsstyrelsen, förtroendeposter och övriga medlemmar i sektionskommittéer senast 7 veckodagar före sektionsmöte då relevant inval äger rum. Nomineringarna skall anslås via någon av sektionens officiella informationskanaler.
+
+    \item Vid varje sektionsmöte, där det sker inval av poster där valberedningen ansvarar för nomineringar, skall valberedningen vara representerad.
+    
+    \setcounter{section}{9}
+    \setcounter{subsection}{0}
+    
+    \switchcolumn
+    \item \emph{Valberedningen ansvarar utöver åliggande i stadga dessutom för nomineringar till}
+    \item[] \emph{(ersätts av stadga \S \ref{13.x:valBfp})}
+    \vspace{4ex}
+    \begin{itemize}
+        \item \emph{Studienämnden} %Note: Sortera efter namn som på andra ställen?
+        \item \emph{Djungelpatrullen}
+        \item \emph{F6}
+        \item \emph{Focumateriet}
+        \item \emph{FARM}
+        \item \emph{FnollK}
+    \end{itemize}
+    
+    \item[] \emph{(ersätts av stadga \S \ref{13.x:valBfp}, stadga \S \ref{S:ValBAnslaNomTid}, \\
+    stadga \S \ref{S:ValBAnslaNom}, reglemente \S \ref{R:Tillkannagivande})}
+    
+    \vspace{14ex}
+    \item[] \emph{(ersätts av stadga \S \ref{4.1:rep})}
+\end{lydelse}
+
+
+\setcounter{subsection}{1}
 \subsection{Nomineringsbeslut}
+Syftet är att eliminera redundans med övriga delar av reglemente och stadga. 
+
+Härigenom föreskrivs i fråga om reglementets avsnitt 3.3
+
+\begin{dels}
+    \item att avsnittets rubrik ska lyda ''Nomineringsbeslut'',
+    \item att avsnittet ska omnumreras 9.2,
+    \item att avsnittet i sin helhet ska ha följande lydelse.
+\end{dels}
+
+\begin{lydelse}
+    \setcounter{subsection}{3}
+    \setcounter{section}{3}
+
+    \item[] ---
+    \vspace{5.5ex}
+    \item[] (se \S3.3.2, \S3.3.1)
+    
+    \vspace{11.3ex}\setcounter{enumi}{2}
+    \item[]
+    \item[]\vspace{1.8em}
+    \item Om sektionsmötet sedan väljer in alla förtroendeposter i berörd kommitté i enlighet med valberedningens nominering fastslås gruppen omedelbart och de övriga medlemmarna är att betrakta som invalda.
+
+	\item Om sektionsmötet inte väljer in alla förtroendeposter i berörd kommitté i enlighet med valberedningens nominering förkastas den preliminärt fastslagna gruppen. Därefter skall val av övriga medlemmar istället företas på sektionsmöte.
+    
+    \item[] (se \S3.3.1, \S3.3.5)
+    
+    \setcounter{subsection}{0}
+    \setcounter{section}{9}
+    \switchcolumn
+    \item \emph{Ledamot i valberedningen får inte delta i beslut som rör ledamoten själv eller annan närstående, eller om annat jäv föreligger.}
+    
+    \item \emph{Poster utöver förtroendeposter i organ kan nomineras i grupp av valberedningen.
+    Sådan gruppnominering ska fastställas av sektionsstyrelsen senast tre läsdagar innan sektionsmötet då valet äger rum.}
+    \label{R:valb:grupp}
+    
+    \item[] \emph{(ersätts av \S \ref{R:SektmoteGruppnom})}
+    \vspace{12ex}
+
+    \item[] \emph{(ersätts av \S \ref{R:SektmoteGruppnom})}
+    
+    \vspace{4.8em}
+    \item \emph{Sektionsstyrelsen bedömer då valberedningens arbete. 
+    Avslag av gruppnomineringen får ske om synnerliga skäl föreligger.
+    Beslut om avslag anslås omedelbart med motivering.}
+\end{lydelse}
+
+\section{Talmanspresidiet}
+Syftet är att bryta ut talmanspresidiet till ett eget kapitel samt att förtydliga åligganden för presidiet.
+
+Härigenom föreskrivs i fråga om reglementets avsnitt 2.5
+
+\begin{dels}
+    \item att \S\S 2.5.1,2.5.3,2.5.5,2.5.7 ska utgå,
+    \item att avsnittet ska bli eget kapitel,
+    \item att kapitlets rubrik ska lyda ''Talmanspresidiet'',
+    \item att kapitlet ska numreras 10,
+\end{dels}
+
+Förklaring till strukna punkter:
+\begin{lydelse}
+    \setcounter{section}{2}
+    \setcounter{subsection}{5}
+    \item Talmanspresidiet består av talman, vice talman och sekreterare.
+    
+    \setcounter{enumi}{2}
+    \item Det åligger vice talman att stödja talmannen i dennes arbete.
+    
+    \setcounter{enumi}{4}
+    \item Vid talmannens frånvaro övertar vice talman dennes åligganden och befogenheter.
+
+    \setcounter{enumi}{6}    
+    \item Vid vakant post i talmanspresidiet väljer sektionsmötet in en person för det aktuella sektionsmötet på förslag av styrelsen. Personen får vara medlem i sektionsstyrelsen förutom när det gäller talman samt vice talman när denne skall överta talmannens arbete. 
+    
+    \setcounter{section}{10}
+    \setcounter{subsection}{0}
+    \switchcolumn
+    
+    \item[] \emph{(ersätts av stadga \S \ref{S:TalPStrukt})}
+    
+    \vspace{1.2em}
+    \item[] \emph{(redundant)}
+    
+    \vspace{1.2em}
+    \item[] \emph{(ersätts av stadga \S \ref{S:TalPViceTOrdf})}
+    
+    \vspace{1.2em}
+    \item[] \emph{(ersätts av mötesordning)}
+    
+\end{lydelse}
+
+\subsection{Åligganden}
+Syftet är redaktionellt
+
+Härigenom föreskrivs i fråga om delar från reglementets avsnitt 2.5
+
+\begin{dels}
+    \item att avsnittets rubrik ska lyda ''Åligganden'',
+    \item att avsnittet ska numreras 10.1,
+    \item att avsnittet i sin helhet ska ha följande lydelse.
+\end{dels}
+
+\begin{lydelse}
+    \setcounter{section}{2}
+    \setcounter{subsection}{5}
+    
+    \item[] (se \S2.5.2, \S2.5.6, \S2.5.8)
+    
+    \vspace{14.3ex}\setcounter{enumi}{3}
+    \item Det åligger sekreterare att föra protokoll under sektionsmöten samt tillse att protokollet justeras och anslås i tid. 
+    
+    \setcounter{section}{10}
+    \setcounter{subsection}{1}
+    \switchcolumn
+    
+   \item \emph{Det åligger talman:}
+    \begin{aligganden}
+        \item \emph{tillse att sektionsmöten utlyses och fortlöper stadgeenligt.}
+        \item \emph{opartiskt leda sektionsmötet och särskilt bevaka demokratiska principer.}
+    \end{aligganden}
+    
+   \item \emph{Det åligger talmanspresidiets sekreterare:}
+    \begin{aligganden}
+        \item \emph{föra protokoll under sektionsmötet och tillse att det justeras och anslås i tid.}
+    \end{aligganden}
+
+\end{lydelse}
 
 \section{Ekonomi och revision}
+Syftet är att samla alla ekonomiska punkter som föreligger många organ på ett och samma ställe.
+
+Härigenom föreskrivs i fråga om reglementet
+
+\begin{dels}
+    \item att ett nytt kapitel införs
+    \item att kapitlets rubrik ska lyda ''Ekonomi och revision''
+    \item att kapitlet ska numreras 11
+\end{dels}
+
 \subsection{Verksamhetsår}
+Syftet är att samla sektionens verksamhetsår under ett avsnitt istället för att individuellt under olika organs avsnitt förteckna dem.
+
+Härigenom föreskrivs i fråga om reglementets nya kapitel 11.
+
+\begin{dels}
+    \item att ett nytt avsnitt införs
+    \item att avsnittets rubrik ska lyda ''Verksamhetsår'',
+    \item att avsnittet ska omnumreras 11.1,
+    \item att avsnittet i sin helhet ska ha följande lydelse.
+\end{dels}
+\begin{lydelse}
+    
+    \item[] (se \S5.1.3.1, \S6.6.2, \S6.7.2, \S6.8.2)
+    \item[]
+    \item[] (se \S6.4.2, \S6.5.2, \S7.5.2)
+    
+    \switchcolumn
+  
+   \item \emph{Om inget annat anges har ett organ samma verksamhetsår som sektionen.}
+    \label{R:VanligtVerksamhetsar}
+    
+   \item \emph{Följande organs verksamhetsår löper från 1 januari till 31 december:}
+   \label{R:BrutnaVerksamhetsar}
+    \begin{itemize}
+        \item \emph{FARM}
+        \item \emph{FnollK}
+        \item \emph{FIF}
+    \end{itemize} 
+
+
+\end{lydelse}
+
 \subsection{Redovisning och ansvarsfrihet}
+Syftet är att samla kraven för sektionens organs ekonomiska redovisning under en punkt.
+Krav på delbokslut och årsredovisning läggs på organen då det är ett krav för sektionsstyrelsens ekonomiska årsredovisning; det har tidigare varit ett krav.
+Detta avsnitt verkställer också flytten av rapport-/dechargeärenden för flertalet organ till sektionsstyrelsen med undantag för studienämnden.
+
+Härigenom föreskrivs i fråga om reglementets nya kapitel 11.
+
+\begin{dels}
+    \item att ett nytt avsnitt införs,
+    \item att avsnittets rubrik ska lyda ''Redovisning och ansvarsfrihet'',
+    \item att avsnittet ska omnumreras 11.2,
+    \item att avsnittet i sin helhet ska ha följande lydelse.
+\end{dels}
+\begin{lydelse}
+    
+    \item[] (se \S6.3.2, \S7.3.2)
+    
+    \vspace{3em}
+    \item[] ---
+    
+    \vspace{2.2em}
+    \item[] ---
+    
+    \switchcolumn
+  
+   \item \emph{Följande organ, utöver studienämnden och kommittéer, upprättar egen löpande redovisning:} \label{R:FIFred}
+    \begin{itemize}
+        \item \emph{FIF}
+    \end{itemize}
+    
+   \item \emph{Delbokslut och årsredovisning enligt detta avsnitt presenteras för sektionsstyrelsen inom fyra läsveckor efter organets verksamhetsårs slut.}
+    
+   \item \emph{Studienämnden presenterar dessutom verksamhetsberättelse vid första ordinarie sektionsmöte efter verksamhetsårets slut.
+    Handlingarna tillställs enligt vad som stadgats för sektionsstyrelsens årsredovisning.}
+
+\end{lydelse}
 \subsection{Fonder}
+Syftet är att samla punkterna om sektionens fonder under ett avsnitt samt att generalisera och gruppera dem där de är lika. 
+
+Härigenom föreskrivs i fråga om reglementets gamla kapitel 11
+
+\begin{dels}
+    \item att kapitlet ska bli ett avsnitt
+    \item att avsnittets rubrik ska lyda ''Fonder'',
+    \item att avsnittet ska numreras 11.3,
+    \item att avsnittet i sin helhet ska ha följande lydelse.
+\end{dels}
+\begin{lydelse}
+    \setcounter{section}{11}
+    \setcounter{subsection}{1}
+
+    \item Fysikteknologsektionens fonder är:
+	\begin{itemize}
+		\item F-fonden
+		\item Focus-fonden.
+	\end{itemize}
+	
+	\item[] (se \S11.2.3, \S11.3.3)
+	
+	\item[] (se \S11.2.7, \S11.3.7)
+    
+    \setcounter{section}{11}
+    \setcounter{subsection}{3}
+    \switchcolumn
+  
+   \item \emph{Sektionens} fonder är:
+    \begin{itemize}
+        \item F-fonden
+        \item \emph{Focusfonden}
+    \end{itemize}
+
+   \item \emph{Fonderna handhas av sektionsstyrelsen.}
+   \label{R:FondHantSekt}
+    
+   \item \emph{Fondernas medel placeras i räntefonder med låg risk.
+    Ränteavkastningen återinvesteras.}
+    \label{R:FondRantAter}
+
+\end{lydelse}
+\textbf{F-fonden}
+\begin{lydelse}
+    
+    \setcounter{subsection}{2}
+    
+    \item[] ---
+    
+    
+    \vspace{1.3em}\setcounter{enumi}{1}
+    \item F-Fondens medel kan användas till:
+	\begin{itemize}
+		\item Renovering av Fysikteknologsektionens lokaler.
+		\item Införskaffande och renovering av sektionsbil.
+		\item Inköp av inventarier.
+		\item Att täcka eventuellt överdrag av budgeten.
+		\item Sektionens oförutsedda utgifter.
+		\item Annat som sektionsmötet finner lämpligt.
+	\end{itemize}
+	
+	
+	\item Fonden handhas av sektionsstyrelsen.
+	
+    \item Uttag ur F-fonden beslutas av sektionsmöte. Sådant uttag kan dock ej göras om ärendet inte upptagits på slutlig föredragningslista.
+    
+    \item Sektionsstyrelsen får för den löpande driften låna medel ur F-fonden. Vid sådant lån behöver fonden ej kompenseras för ränteförlusten.
+    
+    \setcounter{enumi}{0}
+    \item Sektionens medel bör göras räntebärande genom placering i räntefond.
+    
+    \setcounter{enumi}{5}
+    \item Överblivna medel inom Fysikteknologsektionen skall i möjligaste mån tillfalla fonden. Har styrelsen vid verksamhetsårets slut ej tagit samtliga medel inom budgeten i anspråk, skall överskjutande medel avsättas till F-fonden.
+    
+    \item F-fondens medel skall göras räntebärande genom placering i lågriskfonder. Räntan skall fonderas.
+    
+    \item När F-fonden understiger det under året gällande basbeloppet skall avsättning till F-fonden ske årligen med minst 15 \% av inbetalda sektionsavgifter tills fonden återigen uppgår till minst ett basbelopp.
+
+    \setcounter{subsection}{3}
+    \switchcolumn
+    \setcounter{enumi}{3}
+    
+    \item \emph{F-fonden syftar till att säkerställa sektionens likviditet.}
+    
+    \item \emph{ F-fondens medel kan användas till det som sektionsmötet finner lämpligt, t.ex. renovering av sektionens lokaler, inköp och underhåll av inventarier så som sektionsbil, oförutsedda utgifter och täckande av underskott.}
+    
+    
+    
+    \vspace{7.3em}
+    \item[]
+    \item[] \emph{(ersätts av \S\ref{R:FondHantSekt})}
+    
+    \item Uttag ur F-fonden beslutas av sektionsmöte. \emph{Ärendet ska anges i kallelse.}
+    
+    \vspace{3ex}
+    \item Sektionsstyrelsen får \emph{om nödvändigt kortvarigt} låna medel ur F-fonden.\emph{ I sådant fall} behöver fonden ej kompenseras för ränteförlusten.
+    
+    \item[] \emph{(ersätts av \S\ref{R:Fondoverskott})}
+    
+    \vspace{1.2em}
+    \item \emph{Överskott i sektionens verksamhet tillfaller F-fonden.}
+    \label{R:Fondoverskott}
+    
+    \vspace{8.5ex}
+    \item[] \emph{(ersätts av \S\ref{R:FondRantAter})}
+    
+    \vspace{2.75ex}
+    \item \emph{Om F-fondens värde understiger ett prisbasbelopp ska avsättning göras med minst 15 procent av inbetalda sektionsavgifter tills dess denna nivå uppnås.}
+\end{lydelse}
+\textbf{Focusfonden}
+\begin{lydelse}
+    
+    \item Att fondera medel för framtida upprustning \\ av Focus.
+
+	\item Focus-fondens medel kan användas till:
+	\begin{itemize}
+		\item Renovering av Focus
+		\item Inköp av inventarier till Focus.
+	\end{itemize}
+
+	\item Fonden handhas av sektionsstyrelsen i \\ samarbete med DP.
+
+	\item Uttag ur fonden beslutas av sektionsstyrelsen.
+
+    \vspace{2.75ex}
+	\item Överblivna medel inom budgetposten Focus \\ upprustning tillfaller Focus-fonden vid \\ verksamhetsårets slut.
+
+	\item Samtliga hyresintäkter för uthyrning av Focus tillfaller Focus-fonden.
+
+	\item Focus-fondens medel skall göras räntebärande genom placering i lågriskfonder. Räntan skall fonderas.
+    
+    \switchcolumn
+    \setcounter{enumi}{9}
+    
+    \item \emph{Focusfonden syftar till att möjliggöra större upprustningar av Focus.}
+    
+    \item \emph{Focusfondens medel kan användas till renovering av Focus eller inköp av inventarier till Focus.}
+    
+    \vspace{6ex}
+    \item[] \emph{(ersätts av \S\ref{R:FondHantSekt}, \S\ref{R:FocusFondUttag})}
+    
+    \vspace{2.5ex}
+    \item Uttag ur \emph{Focusfonden} beslutas av sektionsstyrelsen \emph{i samråd med Djungelpatrullen}.
+    \label{R:FocusFondUttag}
+    
+    \item \emph{Överskott inom budgetposten ''Focus upprustning'' samt samtliga hyresintäkter för Focus tillfaller Focusfonden.}
+    \label{R:FocusFondOverskott}
+    
+    \item[] \emph{(ersätts av \S\ref{R:FocusFondOverskott})}
+    
+    \vspace{3ex}
+    \item[] \emph{(ersätts av \S\ref{R:Fondoverskott})}
+
+\end{lydelse}
 
 \section{Styrdokument}
+Syftet är att samla alla punkterna kring sektionens olika styrdokument under ett kapitel.
+
+Härigenom föreskrivs i fråga om reglementets kapitel 10
+
+\begin{dels}
+    \item att kapitlets rubrik ska lyda ''Styrdokument''
+    \item att kapitlet ska omnumreras 12
+\end{dels}
+
 \subsection{Förteckning}
+Syftet är att befästa synnerligen viktiga dokument i reglementet. 
+
+Härigenom föreskrivs i fråga om reglementets avsnitt 10.1
+
+\begin{dels}
+    \item att avsnittets rubrik ska lyda ''Förteckning'',
+    \item att avsnittet ska omnumreras 12.1,
+    \item att avsnittet i sin helhet ska ha följande lydelse.
+\end{dels}
+\begin{lydelse}
+    
+    \setcounter{section}{10}
+    
+    \item Följande styrdokument skall finnas på sektionen:
+	\begin{itemize}
+		\item Sammanträdesordning sektionsmötet
+		\item Riktlinjer för verksamhetsberättelse och ansvarsfrihet
+		\item Arbetsordningar
+	\end{itemize}
+    Därtill regleras verksamheten av övriga dokument som sektionsstyrelsen beslutat vara styrdokument. Komplett förteckning över övriga styrdokument skall tillhandahållas av sektionsstyrelsen.
+
+    \vspace{1.4em}
+    \item[] (se \S 10.1.1)
+    
+    \setcounter{section}{12}
+    \switchcolumn
+  
+    \item Följande \emph{övriga} styrdokument \emph{ska} finnas på sektionen:
+    \label{R:ForteckningStyrdokument}
+    \begin{itemize}
+        \item Arbetsordningar
+        \item Sammanträdesordning \emph{för} sektionsmötet
+        \item \emph{Förteckning över sektionsmötesbeslut}
+        \item \emph{Ekonomisk policy}
+        \item \emph{Integritetspolicy}
+        \item \emph{Miljö- och hållbarhetspolicy}
+        \item \emph{Lokalpolicy Focus}
+    \end{itemize}
+    
+    \item Därtill \emph{får sektionsstyrelsen förklara ytterligare dokument} vara styrdokument.
+    Komplett förteckning över övriga styrdokument ska tillhandahållas av sektionsstyrelsen.
+
+\end{lydelse}
 \subsection{Ändring}
+Syftet är redaktionellt med tillägget att väsentliga ändringar i styrdokument ska anslås.
+
+Härigenom föreskrivs i fråga om delar av reglementets avsnitt 10.2
+
+\begin{dels}
+    \item att avsnittets rubrik ska lyda ''Ändring'',
+    \item att avsnittet ska omnumreras 12.2,
+    \item att avsnittet i sin helhet ska ha följande lydelse.
+\end{dels}
+\begin{lydelse}
+    \setcounter{section}{10}
+    \setcounter{subsection}{2}
+    
+    \item Vad gäller ändring och tolkning av enskilda styrdokument ska detta anges i de individuella dokumenten. Om uteblivet sker ändringar och tolkningar av sektionsstyrelsen via enkel majoritet.
+    
+    \item[] ---
+    
+    \setcounter{section}{12}
+    \setcounter{subsection}{2}
+    \switchcolumn
+  
+    \item \emph{Ändring av övrigt styrdokument görs av sektionsstyrelsen med enkel majoritet om inget annat anges.}
+
+    \item[]
+    \item \emph{Sektionsstyrelsen ska anslå väsentliga ändringar gjorda i styrdokument.}
+
+\end{lydelse}
 \subsection{Tillkännagivande}
+\label{R:Tillkannagivande}
+Syftet är att gruppera och beteckna entydigt vad innebördan av att ''anslå'' någonting betyder.
+
+Härigenom föreskrivs i fråga om reglementets nya kapitel 12
+
+\begin{dels}
+    \item att ett nytt avsnitt införs,
+    \item att avsnittets rubrik ska lyda ''Tillkännagivande'',
+    \item att avsnittet ska numreras 12.3,
+    \item att avsnittet i sin helhet ska ha följande lydelse.
+\end{dels}
+\begin{lydelse}
+    
+    \item[] (se \S2.1.1, \S2.2.1, \S3.2.1, \S3.3.2, \S3.3.5, \\, \S4.2.4, \S4.2.10, \S4.3.7, \S 5.1.4.5)
+    
+    \switchcolumn
+  
+    \item \emph{Vad som i stadga, reglemente eller annat styrdokument ska anslås görs så via sektionens officiella kommunikationskanaler, vilka utgörs av sektionens hemsida \href{ftek.se} samt sektionens anslagstavlor.}
+
+\end{lydelse}
 \subsection{Sekretess}
+\label{R:sekretess}
+Syftet är att samla punkterna från reglementet om sekretess under ett avsnitt. 
+Tillägg är att sektionsstyrelsen kan om synnerliga skäl föreligger med enhälligt beslut lämna ut sekretessbelagd uppgift.
+
+Härigenom föreskrivs i fråga om delar av reglementets nya kapitel 12
+
+\begin{dels}
+    \item att ett nytt avsnitt införs,
+    \item att avsnittets rubrik ska lyda ''Sekretess'',
+    \item att avsnittet ska numreras 12.4,
+    \item att avsnittet i sin helhet ska ha följande lydelse.
+\end{dels}
+\begin{lydelse}
+    
+    \item[] (se \S 1.2.1)
+    
+    \vspace{4.4em}
+    \item[] (se \S4.3.6)
+    
+    \vspace{1.4em}
+    \item[] (se \S1.2.1, \S4.2.10)
+    
+    \vspace{2.4em}
+    \item[] ---
+    
+    \switchcolumn
+  
+    \item \emph{Följande dokument har medlem ej rätt att ta del av:}
+    \begin{itemize}
+        \item \emph{Incidenthanteringsprotokoll}
+        \item \emph{Handling innehållande personuppgifter}
+    \end{itemize}
+    
+    \item \emph{Därutöver har sektionsstyrelsens skyddsombud tystnadsplikt i sitt uppdrag.}
+    
+    \item \emph{Sektionsaktiv får dock hantera sekretessbelagd uppgift i organets ordinarie verksamhet, men inte föra den vidare.}
+    
+    \item \emph{Sektionsstyrelsen kan om synnerliga skäl föreligger med enhälligt beslut lämna ut sekretessbelagd uppgift.}
+
+\end{lydelse}
 \subsection{Tolkningstvister}
+Syftet är redaktionellt. 
+
+Härigenom föreskrivs i fråga om delar av reglementets avsnitt 10.2
+
+\begin{dels}
+    \item att avsnittets rubrik ska lyda ''Tolkningstvister'',
+    \item att avsnittet ska omnumreras 12.5,
+    \item att avsnittet i sin helhet ska ha följande lydelse.
+\end{dels}
+\begin{lydelse}
+    \setcounter{section}{10}
+    \setcounter{subsection}{2}
+    
+    \item Vad gäller ändring och tolkning av enskilda styrdokument ska detta anges i de individuella dokumenten. Om uteblivet sker ändringar och tolkningar av sektionsstyrelsen via enkel majoritet. 
+
+	\item Uppstår tolkningstvist om detta reglementes tolkning skall frågan hänskjutas till sektionens inspektor.
+
+    \item Vid konflikt med Fysikteknologsektionens övriga styrdokument, undantaget stadgan, har reglementet företräde.
+    
+    \setcounter{section}{12}
+    \setcounter{subsection}{5}
+    \switchcolumn
+  
+    \item \emph{Tolkning av övrigt styrdokument görs av sektionsstyrelsen med enkel majoritet om inget annat anges.}
+    
+    \vspace{2.4em}
+    \item \emph{Vid tvist om reglementets tolkning avgörs frågan av inspektor.}
+    
+    \vspace{1.2em}
+    \item[] \emph{(ersätts av stadga \S \ref{S:TolkningStadgaFore})}
+
+\end{lydelse}
+
+\section*{Avsnitt som utgår}
+Syftet är att hölja detaljnivån på reglementet; overallregler flyttas till policy.
+
+Härigenom föreskrivs i fråga om reglementets gamla kapitel 12 att kapitlet utgår.
 
 \end{document}
+
+%Notes
+% Enl. 12.3.1 måste styretkallelserna anslås officiellt
+% Komitteers överblivna tillgångar tillfaller ej sektionen?
+% Motivera Finform blir sektionsförening
+% Ekonomiskt ansvar för FIFs ordf/kassör är struket ur reglemetet men inte ersatt av stadgan som för kommittéer/snf
+% CTRL + F efter R:Broke för att hitta ställen där jag inte vet vad/om det ersätts av något
+
+% Mina reglementesändringar
+% Stod Fabiola istället för Foton på ett ställe
+% Ändrade FIF till Finform i 6.7.2
